@@ -1,0 +1,221 @@
+// Button Component Styles
+// ========================================
+
+// Variables
+$button-border:                     none;
+$button-display:                    inline-block;
+$button-line-height:                normal;
+$button-padding:                    $spacer-delta $spacer-charlie;
+$button-radius:                     1px;
+$button-text-align:                 center;
+$button-text-transform:             uppercase;
+$button-transition:                 all 0.3s ease-in-out;
+
+$button-small-padding:              ($spacer-delta / 2) $spacer-delta;
+
+$button-input-height:               45px;
+$button-input-padding:              0 20px;
+
+$button-hover-cursor:               pointer;
+$button-hover-opacity:              1;
+
+$button-hover-cursor-disabled:      not-allowed;
+
+$button-focus-border:               none;
+$button-focus-outline:              none;
+$button-focus-text-decoration:      none;
+
+$button-add-on-container-display:   inline-block;
+$button-add-on-container-position:  relative;
+
+$button-add-on-display:             inline-block;
+$button-add-on-margin:              -4px;
+$button-add-on-padding:             $spacer-delta;
+$button-add-on-radius:              0;
+
+$button-dropdown-cords:             47px 1px null 0;
+$button-dropdown-display:           none;
+$button-dropdown-position:          absolute;
+
+$button-dropdown-link-color:        $white-base;
+$button-dropdown-link-margin:       $spacer-delta;
+$button-dropdown-link-weight:       600;
+
+
+// Main Button
+%button {
+  @include font-type($primary-sans-serif, normal, 700);
+  @include s-foxtrot;
+  @include transition($button-transition);
+  border: $button-border;
+  border-radius: $button-radius;
+  display: $button-display;
+  height: auto;
+  line-height: $button-line-height;
+  padding: $button-padding;
+  text-align: $button-text-align;
+  text-decoration: none;
+  text-transform: $button-text-transform;
+  -webkit-appearance: none;
+
+  &:hover {
+    cursor: $button-hover-cursor;
+    opacity: $button-hover-opacity;
+  }
+
+  &:focus {
+    border: $button-focus-border;
+    outline: $button-focus-outline;
+    text-decoration: $button-focus-text-decoration;
+  }
+
+  &:active {
+    opacity: 1;
+  }
+}
+
+
+// Button Styles
+@each $button, $styles in $buttons {
+  $bg-color:  nth($styles, 1);
+  $color:     nth($styles, 2);
+
+  .button--#{$button},
+  .button--add-on--#{$button} {
+    @extend %button;
+    background: $bg-color;
+    color: $color;
+
+    &:hover {
+      background-color: lighten($bg-color, 10%);
+
+      // Disabled Button
+      @if $button == 'disabled' {
+        background-color: $bg-color;
+        cursor: $button-hover-cursor-disabled;
+      }
+    }
+
+    &:focus {
+      @include box-shadow(0 0 0, transparent);
+      border: $button-focus-border;
+    }
+
+    &.button--add-on {
+      border-bottom-right-radius: $button-add-on-radius;
+      border-top-right-radius: $button-add-on-radius;
+      display: $button-add-on-display;
+      margin-right: $button-add-on-margin;
+    }
+
+    &.button--add-on__dropdown:hover {
+      background: $bg-color;
+    }
+  }
+
+  // Remove Border Radius from Button Add on
+  .button--add-on--#{$button} {
+    border-bottom-left-radius: $button-add-on-radius;
+    border-top-left-radius: $button-add-on-radius;
+  }
+
+  // Button Outline
+  .button-outline--#{$button} {
+    @extend %button;
+    background: transparent;
+    border: 1px solid $bg-color;
+    color: $color;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    i {
+      vertical-align: middle;
+    }
+
+    i #app-icon {
+      fill: $bg-color;
+    }
+  }
+
+  // Button Add On
+  .button--add-on--#{$button} {
+    background: darken($bg-color, 10%);
+    display: $button-add-on-display;
+    padding: $button-add-on-padding;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  // Moz Fix
+  @-moz-document url-prefix() {
+    .button--add-on--#{$button} {
+      padding: 16px $spacer-delta;
+    }
+  }
+}
+
+
+
+// Button Sizes
+.button--small {
+  @include s-golf;
+  padding: $button-small-padding;
+}
+
+.button--full {
+  display: block;
+  width: 100%;
+}
+
+.button--form {
+  height: 40px;
+  padding: 0 $spacer-delta;
+}
+
+
+// Button Dropdown
+.button--add-on__container {
+  @include position($button-add-on-container-position);
+  display: $button-add-on-container-display;
+
+  &.is-active {
+
+    .button--add-on__dropdown {
+      @include box-shadow(2px 6px 5px, rgba(48, 54, 67, 0.2));
+      display: block;
+    }
+
+    .button--add-on__icon {
+      @include transform(rotate(-180deg));
+    }
+  }
+}
+
+.button--add-on__icon {
+  @include transform(rotate(0));
+  @include transition(transform 0.75s ease);
+}
+
+.button--add-on__dropdown {
+  @include position($button-dropdown-position, $button-dropdown-cords);
+  border-top-left-radius: $button-add-on-radius;
+  border-top-right-radius: $button-add-on-radius;
+  display: $button-dropdown-display;
+}
+
+.button--add-on__dropdown-item {
+  &:not(:last-child) {
+    margin-bottom: $button-dropdown-link-margin;
+  }
+}
+
+.button--add-on__dropdown-link {
+  @include s-foxtrot;
+  color: $button-dropdown-link-color;
+  display: block;
+  font-weight: $button-dropdown-link-weight;
+}

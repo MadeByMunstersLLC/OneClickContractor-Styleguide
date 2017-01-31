@@ -1,0 +1,32 @@
+// Badge Component Styles
+// ========================================
+
+// Variables
+$badge-color:       $white-base;
+$badge-display:     inline-block;
+$badge-padding:     $spacer-echo $spacer-delta;
+$badge-radius:      30px;
+$badge-transform:   uppercase;
+$badge-weight:      600;
+
+
+
+// Structure
+%badge {
+  @include s-golf;
+  border-radius: $badge-radius;
+  color: $badge-color;
+  display: $badge-display;
+  font-weight: $badge-weight;
+  padding: $badge-padding;
+  text-transform: $badge-transform;
+}
+
+@each $badge, $styles in $badges {
+  $bg-color:      nth($styles, 1);
+
+  .badge--#{$badge} {
+    @extend %badge;
+    background: $bg-color;
+  }
+}

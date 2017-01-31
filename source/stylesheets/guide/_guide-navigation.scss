@@ -1,0 +1,179 @@
+// Style Guide Navigation Styles
+// ========================================
+
+// Variables
+$guide-navigation-background:               $black-base;
+$guide-navigation-line-height:              0;
+$guide-navigation-padding:                  $spacer-charlie;
+$guide-navigation-position:                 absolute;
+$guide-navigation-width:                    100%;
+$guide-navigation-z-index:                  999;
+
+$guide-navigation-btn-bg:                   transparent;
+$guide-navigation-btn-border:               none;
+
+$guide-navigation-i-cursor:                 pointer;
+$guide-navigation-i-height:                 16px;
+$guide-navigation-i-transform:              rotate(0deg);
+$guide-navigation-i-transition:             0.35s ease-in-out;
+$guide-navigation-i-width:                  25px;
+
+$guide-navigation-i-span-bg:                $white-base;
+$guide-navigation-i-span-height:            2px;
+$guide-navigation-i-span-opacity:           1;
+$guide-navigation-i-span-transform:         rotate(0deg);
+$guide-navigation-i-span-transition:        0.35s ease-in-out;
+$guide-navigation-i-span-width:             100%;
+
+$guide-navigation-overlay-bg:               $black-base;
+$guide-navigation-overlay-height:           100%;
+$guide-navigation-overlay-opacity:          0;
+$guide-navigation-overlay-opacity-active:   1;
+$guide-navigation-overlay-position:         fixed;
+$guide-navigation-overlay-width:            100%;
+$guide-navigation-overlay-z-index:          -1;
+$guide-navigation-overlay-z-index-active:   1;
+
+
+// Structure
+.guide__navigation {
+  @include position($guide-navigation-position);
+  background-color: $guide-navigation-background;
+  line-height: $guide-navigation-line-height;
+  padding: $guide-navigation-padding;
+  width: $guide-navigation-width;
+  z-index: $guide-navigation-z-index;
+}
+
+.guide__navigation--left,
+.guide__navigation--right {
+  display: inline-block;
+}
+
+.guide__navigation--right {
+  float: right;
+}
+
+.guide__navigation--left a {
+  display: inline-block;
+  line-height: 0;
+}
+
+.guide__navigation__menu-button {
+  background-color: $guide-navigation-btn-bg;
+  border: $guide-navigation-btn-border;
+  padding: 0;
+
+  &:hover {
+    cursor: $guide-navigation-i-cursor;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.guide__navigation__menu-icon {
+  @include transform($guide-navigation-i-transform);
+  @include transition($guide-navigation-i-transition);
+  height: $guide-navigation-i-height;
+  width: $guide-navigation-i-width;
+
+  & span {
+    @include position(absolute, null null null 0);
+    @include transform($guide-navigation-i-span-transform);
+    @include transition($guide-navigation-i-span-transition);
+    background-color: $guide-navigation-i-span-bg;
+    height: $guide-navigation-i-span-height;
+    opacity: $guide-navigation-i-span-opacity;
+    width: $guide-navigation-i-span-width;
+
+    &:nth-child(1) { top: 0; }
+
+    &:nth-child(2),
+    &:nth-child(3) { top: 6px; }
+
+    &:nth-child(4) { top: 12px; }
+  }
+
+  &.is-active {
+
+    span:nth-child(4) { top: 20px; }
+    span:nth-child(1) { left: 50%; top: 1px; width: 0; }
+    span:nth-child(2) { @include transform(rotate(45deg)); }
+    span:nth-child(3) { @include transform(rotate(-45deg)); }
+    span:nth-child(4) { left: 50%; top: 18px; width: 0%; }
+  }
+}
+
+
+// Guide Navigation Modal
+.guide__navigation__modal {
+  @include position($guide-navigation-overlay-position);
+  @include transition(opacity 0.35s ease-in-out);
+  background-color: $guide-navigation-overlay-bg;
+  height: $guide-navigation-overlay-height;
+  opacity: $guide-navigation-overlay-opacity;
+  overflow-y: scroll;
+  width: $guide-navigation-overlay-width;
+  z-index: $guide-navigation-overlay-z-index;
+
+  &.is-active {
+    opacity: $guide-navigation-overlay-opacity-active;
+    z-index: $guide-navigation-overlay-z-index-active;
+  }
+}
+
+.guide__navigaiton__modal-container {
+  margin: ($spacer-alpha * 2) 0 0 $spacer-charlie;
+}
+
+.guide__navigation__modal-links {
+  @include position(relative);
+  z-index: 100;
+}
+
+.guide__navigation__modal-item {
+  @include span-columns(4 of 4);
+
+  @include media($large) {
+    @include span-columns(3 of 12);
+  }
+}
+
+.guide__navigation__modal-title,
+.guide__navigation__modal-label,
+.guide__navigation__modal-link {
+  color: $white-base;
+}
+
+.guide__navigation__modal-title {
+  @include position(absolute, null null 0 null);
+  font-size: 200px;
+  font-weight: 900;
+  line-height: normal;
+  margin-bottom: $spacer-charlie;
+  opacity: 0.07;
+  text-transform: uppercase;
+}
+
+.guide__navigation__modal-label {
+  @include s-golf;
+  margin-bottom: $spacer-echo;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.guide__navigation__modal-submenu {
+  margin-bottom: $spacer-charlie;
+}
+
+.guide__navigation__modal-link {
+  @include transition(color 0.3s ease-in-out);
+  @include s-bravo;
+  font-weight: 600;
+
+  &:hover {
+    color: $blue-base;
+  }
+}

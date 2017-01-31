@@ -1,0 +1,63 @@
+<div class="page-article__content-section" id="cards">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Cards</h2>
+      <p class="text--large">No, no not your grandma's playing cards.</p>
+      <p class="text">Cards are meant to be a universal element that help group similar content together. They can be used to display what elements are draggable on a page or group form fields together.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <div class="card">
+      <p class="margin--reset">Card Base</p>
+    </div>
+    <div class="card card--small">
+      <p class="margin--reset">Card Small</p>
+    </div>
+    <div class="card card--extra-small">
+      <p class="margin--reset">Card Extra Small</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Standard Card -->
+  <div class="card">
+    <!-- Card Content -->
+  </div>
+
+  <!-- Small Card -->
+  <div class="card card--small">
+    <!-- Card Content -->
+  </div>
+
+  <!-- Extra Small Card -->
+  <div class="card card--extra-small">
+    <!-- Card Content -->
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a card.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.card</td>
+          <td class="table__body-item">This should be applied to the element you are styling to look like a card. <% code("html") do %><div class="card"> <!-- Card Content --> </div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.card--small</td>
+          <td class="table__body-item">Modifier to make the card padding 15px instead of the standard 30px. <% code("html") do %><div class="card card--small"> <!-- Card Content --> </div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.card--extra-small</td>
+          <td class="table__body-item">Modifier to make the card padding 5px on the top and bottom and 15px on the left and right instead of the standard 30px. <% code("html") do %><div class="card card--extra-small"> <!-- Card Content --> </div><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+/* Theme Settings */
+<%= Rouge::Themes::Github.render(:scope => '.highlight') %>
+
+/* Theme Overrides */
+pre {
+  background-color: #FAFAFA !important;
+  border: 1px solid #DEDFE1;
+  border-radius: 1px;
+  font-family: monospace !important;
+  margin: 15px 0 0 !important;
+  overflow: scroll;
+  padding: 15px !important;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  white-space: pre-wrap !important;
+  width: 100%;
+}
+
+code {
+  font-family: monospace;
+  padding: 2px 15px;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+  padding: 0 !important;
+  line-height: normal;
+}

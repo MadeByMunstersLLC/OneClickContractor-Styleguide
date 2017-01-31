@@ -1,0 +1,158 @@
+<div class="page-article__content-section" id="buttons">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Buttons</h2>
+      <p class="text--large">Click me! Go ahead do it.</p>
+      <p class="text">Let's talk about buttons. These elements should be used for actions that the user can take. The primary button is labeled alpha and is the domination application color. It should be used in most cases when users are prompted to perform a submission that can be undone. On the other hand, the charlie button should be used for actions that cannot be undone or are final. The button styles can be applied to various elements on the page. As long as it is suppose to act like a button, the styles are OK to use.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <ul class="guide__list">
+      <li class="guide__item">
+        <button class="button--alpha">Text Here</button>
+      </li>
+      <li class="guide__item">
+        <button class="button--bravo">Text Here</button>
+      </li>
+      <li class="guide__item">
+        <button class="button--charlie">Text Here</button>
+      </li>
+      <li class="guide__item">
+        <button class="button--disabled">Text Here</button>
+      </li>
+    </ul>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Standard Button -->
+  <button class="button--alpha">Button Text</button>
+
+  <!-- Anchor Button -->
+  <a href="#" role="button" class="button--alpha">Button Text</button>
+
+  <!-- Input Type Submit Button -->
+  <input type="submit" name="submitButton" value="Button Text" class="button--disabled" disabled>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a button.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--[type]</td>
+          <td class="table__body-item">This should be applied to the element you are styling to look like a button. The class name should change based on the type of button being used. <% code("html") do %><button class="button--alpha">Button Text</button><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--alpha</td>
+          <td class="table__body-item">Standard button and should be used in almost all cases.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--bravo</td>
+          <td class="table__body-item">Button used for in-page actions such as copying text to a user's clipboard.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--charlie</td>
+          <td class="table__body-item">Only use this button when an action is final and cannot be undone.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--disabled</td>
+          <td class="table__body-item">This style of button should be used to notify a user they cannot perform an action because of missing data or there are no changes to be saved.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">role="button"</td>
+          <td class="table__body-item">If you style a link to look like a button please add this attribute to maintain a level of semantic markup.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <div class="button--add-on__container toggle-parent">
+      <button class="button--alpha button--add-on">Button Text</button>
+      <span class="button--add-on--alpha toggle-element">
+        <%= image_tag 'icons/arrow-select-icon.svg', class: 'button--add-on__icon' %>
+      </span>
+      <ul class="button--alpha button--add-on__dropdown">
+        <li class="button--add-on__dropdown-item">
+          <%= link_to 'Button Link Text', '', class: 'button--add-on__dropdown-link' %>
+        </li>
+        <li class="button--add-on__dropdown-item">
+          <%= link_to 'Button Link Text', '', class: 'button--add-on__dropdown-link' %>
+        </li>
+        <li class="button--add-on__dropdown-item">
+          <%= link_to 'Button Link Text', '', class: 'button--add-on__dropdown-link' %>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Dropdown Button -->
+  <div class="button--add-on__container">
+    <button class="button--alpha button--add-on">Button Text</button>
+    <!-- Dropdown Button Add On -->
+    <span class="button--add-on--alpha">
+      <img src="/images/icons/arrow-select-icon.svg" class="button--add-on__icon">
+    </span>
+    <!-- Dropdown Button List -->
+    <ul class="button--alpha button--add-on__dropdown">
+      <li class="button--add-on__dropdown-item">
+        <a href="#" class="button--add-on__dropdown-link">Preview Scenario</a>
+      </li>
+      <li class="button--add-on__dropdown-item">
+        <a href="#" class="button--add-on__dropdown-link">Publish Scenario</a>
+      </li>
+      <li class="button--add-on__dropdown-item">
+        <a href="#" class="button--add-on__dropdown-link">Archive Scenario</a>
+      </li>
+    </ul>
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a button with a dropdown.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width: 30%">.button--add-on__container</td>
+          <td class="table__body-item">This class should be added to the container that surrounds the button and button dropdown trigger.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--[type]</td>
+          <td class="table__body-item">This should be applied to the element you are styling to look like a button and is the main action. The class name should change based on the type of button being used. <% code("html") do %><button class="button--add-on--alpha">Button Text</button><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--add-on</td>
+          <td class="table__body-item">This class should be added to the button to remove specific styles to the standard button.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--add-on--[type]</td>
+          <td class="table__body-item">This class should be added to the button dropdown action.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--add-on__dropdown</td>
+          <td class="table__body-item">This class should be added to the dropdown list container. This class should be accompanied by the button type, as well. <% code("html") do %><button class="button--add-on__dropdown button--alpha">Button Text</button><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--add-on__dropdown-item</td>
+          <td class="table__body-item">This class should be added to the dropdown list item.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--add-on__dropdown-link</td>
+          <td class="table__body-item">This class should be added to the link inside of the dropdown item.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

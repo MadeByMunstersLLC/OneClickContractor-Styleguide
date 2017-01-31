@@ -1,0 +1,152 @@
+// Application Topbar Module
+// ========================================
+
+
+// Variables
+$app-topbar-background:             $black-base;
+$app-topbar-border:                 1px solid $black-dark;
+$app-topbar-cords:                  0 null null null;
+$app-topbar-margin-0:               0;
+$app-topbar-max-width:              1600px;
+$app-topbar-padding:                $spacer-charlie;
+$app-topbar-position:               fixed;
+$app-topbar-width:                  100%;
+$app-topbar-z-index:                11;
+
+$app-topbar-section-display:        inline-block;
+$app-topbar-section-v-align:        middle;
+$app-topbar-section-width:          28%;
+
+$app-topbar-middle-margin:          0 auto;
+$app-topbar-middle-width:           40%;
+
+$app-topbar-right-float:            right;
+$app-topbar-right-align:            right;
+
+$app-topbar-input-width:            100%;
+
+$app-topbar-avatar-bg:              $white-base;
+$app-topbar-avatar-color:           $grey-dark;
+$app-topbar-avatar-display:         inline-block;
+$app-topbar-avatar-margin:          $spacer-echo;
+$app-topbar-avatar-position:        relative;
+$app-topbar-avatar-radius:          30em;
+$app-topbar-avatar-size:            40px;
+
+$app-topbar-user-content-position:  relative;
+$app-topbar-user-content-cords:     -5px null null null;
+$app-topbar-user-content-display:   inline-block;
+
+$app-topbar-user-name-color:        $white-base;
+
+$app-topbar-settings-text-align:    left;
+
+$app-topbar-settings-item-color:    $white-base;
+$app-topbar-settings-item-display:  inline;
+$app-topbar-settings-item-margin:   $spacer-echo;
+
+
+
+// Structure
+.app-topbar {
+  // NOTE: This should be uncommented in a live app
+  // @include position($app-topbar-position, $app-topbar-cords);
+  background-color: $app-topbar-background;
+  border-bottom: $app-topbar-border;
+  max-width: $app-topbar-max-width;
+  padding: $app-topbar-padding;
+  width: $app-topbar-width;
+  z-index: $app-topbar-z-index;
+}
+
+// Application Topbar Layout
+.app-topbar__left,
+.app-topbar__middle,
+.app-topbar__right {
+  display: $app-topbar-section-display;
+  vertical-align: $app-topbar-section-v-align;
+}
+
+.app-topbar__left,
+.app-topbar__right {
+  width: $app-topbar-section-width;
+}
+
+.app-topbar__middle {
+  margin: $app-topbar-middle-margin;
+  width: $app-topbar-middle-width;
+
+  .input--search {
+    margin: $app-topbar-margin-0;
+    width: $app-topbar-input-width;
+  }
+}
+
+.app-topbar__right {
+  float: $app-topbar-right-float;
+  text-align: $app-topbar-right-align;
+
+  .right__item {
+    display: $app-topbar-section-display;
+    margin: $app-topbar-margin-0;
+    vertical-align: $app-topbar-section-v-align;
+
+    &:not(:last-child) {
+      margin-right: $spacer-delta;
+    }
+  }
+}
+
+.app-topbar__user {
+  display: $app-topbar-section-display;
+
+  .user__avatar {
+    @include position($app-topbar-avatar-position);
+    @include font-type($primary-sans-serif, normal, 600);
+    background-color: $app-topbar-avatar-bg;
+    border-radius: $app-topbar-avatar-radius;
+    color: $app-topbar-avatar-color;
+    display: $app-topbar-avatar-display;
+    height: $app-topbar-avatar-size;
+    margin-right: $app-topbar-avatar-margin;
+    overflow: hidden;
+    width: $app-topbar-avatar-size;
+  }
+
+  .user__avatar-img {
+    width: 100%;
+  }
+
+  // Add class if on avatar is present
+    // Remove class if avatar is present
+  .user__avatar-no-img {
+    @include center(true, true);
+    text-align: center;
+  }
+
+  .user__content {
+    @include position($app-topbar-user-content-position, $app-topbar-user-content-cords);
+    display: $app-topbar-user-content-display;
+    text-align: left;
+
+    .user__name {
+      @include font-type($primary-sans-serif, normal, 600);
+      color: $app-topbar-user-name-color;
+    }
+  }
+
+  .user__settings-list {
+    text-align: $app-topbar-settings-text-align;
+
+    .list__item {
+      @include s-golf;
+      color: $app-topbar-settings-item-color;
+      display: $app-topbar-settings-item-display;
+      margin-right: $app-topbar-settings-item-margin;
+    }
+
+    .list__item-link {
+      color: $app-topbar-settings-item-color;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+// Buttons Variables
+// ========================================
+
+$buttons: (
+  'alpha': (
+    $blue-base,
+    $white-base
+  ),
+  'bravo': (
+    $black-base,
+    $white-base
+  ),
+  'charlie': (
+    $red-base,
+    $white-base
+  ),
+  'disabled': (
+    $grey-light,
+    $grey-dark
+  )
+);

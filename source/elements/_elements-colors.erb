@@ -1,0 +1,19 @@
+<div class="page-article__content-section" id="colors">
+  <div class="row">
+    <div class="content-section__header">
+      <h2 class="title">Colors</h2>
+      <p class="text--large">The color theme for Atomzier focuses on the details and uses color to express emotion, action, and prominence.</p>
+      <p class="text">The color palette is comprised of nine core colors. The greys are used for backgrounds, borders and elements that are disabled. The brightest colors in the palette - red, yellow and green - are used to draw attention to a user. They maybe used for alerts, actions that cannot be undone, or descriptive labels that need extra attention. Finally, the most dominate colors - black and blue - are used for navigation and basic interaction tasks.</p>
+      <p class="text">When adding new components or features, consider the usage first and then assign colors. By standardizing the palette and reserving certain colors for particular actions, the overall experience will benefit.</p>
+    </div>
+  </div>
+  <ul class="list content-section__row">
+    <% data.element_colors.colors.each do |c| %>
+      <li class="color-swatch columns-2__s columns-3__m columns-3__l">
+        <span class="color-swatch__icon" style="background-color: <%= c.value %>"></span>
+        <h5 class="title text--bold"><%= c.value %></h5>
+        <p class="subtitle text--bold"><%= c.title %></p>
+      </li>
+    <% end %>
+  </ul>
+</div>

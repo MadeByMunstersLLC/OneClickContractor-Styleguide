@@ -1,0 +1,57 @@
+<div class="page-article__content-section" id="links">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Links</h2>
+      <p class="text--large">What a beautiful day to hit the links.</p>
+      <p class="text">This component should be used for navigational purposes or appending items to a list. If you want to move a user from one page to the next or load an overlay, then a link is the right way to go. Avoid using links when asking users to submit final actions. They can be used next to a submit action if want to provide users a way to cancel or close an item, however.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <ul class="guide__list">
+      <li class="guide__item">
+        <a href="#" class="link--alpha">Link Text</a>
+      </li>
+      <li class="guide__item">
+        <a href="#" class="link--bravo">Link Text</a>
+      </li>
+      <li class="guide__item">
+        <a href="#" class="link--charlie">Link Text</a>
+      </li>
+      <li class="guide__item">
+        <a href="#" class="link--disabled">Link Text</a>
+      </li>
+    </ul>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Main Link -->
+  <a href="#" class="link--alpha">Link Text</a>
+
+  <!-- Secondary Link -->
+  <a href="#" class="link--bravo">Link Text</a>
+
+  <!-- Warning Link -->
+  <a href="#" class="link--charlie">Link Text</a>
+
+  <!-- Disabled Link -->
+  <a href="#" class="link--disabled">Link Text</a>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a link.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.link--[type]</td>
+          <td class="table__body-item">This should be applied to the element you are styling as a link. The class name should change based on the type of link being used. <% code("html") do %><a href="#" class"link--alpha"></a><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

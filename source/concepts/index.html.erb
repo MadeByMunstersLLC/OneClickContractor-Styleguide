@@ -1,0 +1,17 @@
+---
+title: Design Concepts | Red Ventures Atomizer.
+header_title: Concepts.
+---
+
+<!-- Page Variables -->
+<% sidenav = data.navigation.site_navigation.select {|item| request.path.split('/')[0] == item.section_url} %>
+
+<article class="guide__page-article">
+
+  <!-- Page Sections -->
+  <div class="page-article__content">
+  </div>
+
+  <!-- Page Sidebar -->
+  <%= partial 'layouts/shared/_guide-page-nav', locals: {sidenav: sidenav} %>
+</article>

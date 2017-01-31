@@ -1,0 +1,28 @@
+colors:
+  - title: Light Grey
+    value: '#FAFAFA'
+    color: 'grey-light'
+  - title: Base Grey
+    value: '#DEDFE1'
+    color: 'grey-base'
+  - title: Dark Grey
+    value: '#91969D'
+    color: 'grey-dark'
+  - title: Base Black
+    value: '#303743'
+    color: 'black-base'
+  - title: Base Purple
+    value: '#434358'
+    color: 'purple-base'
+  - title: Base Yellow
+    value: '#FBCF6E'
+    color: 'yellow-base'
+  - title: Base Red
+    value: '#E6614F'
+    color: 'red-base'
+  - title: Base Green
+    value: '#42B996'
+    color: 'green-base'
+  - title: Base Blue
+    value: '#2791C6'
+    color: 'blue-base'

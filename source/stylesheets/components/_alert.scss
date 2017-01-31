@@ -1,0 +1,77 @@
+// Alert Component Style
+// ========================================
+
+// Variables
+$alet-border:              1px solid;
+$alet-display:             inline;
+$alert-opacity:            1;
+$alert-opacity-hidden:     0;
+$alet-padding:             $spacer-delta $spacer-charlie;
+$alert-position:           relative;
+$alert-radius:             1px;
+$alert-spread:             0 0 15px;
+$alert-shadow:             rgba(35,35,35,0.20);
+$alert-v-align:            middle;
+
+$alert-close-float:        right;
+$alert-close-margin:       3px;
+$alert-close-size:         15px;
+$alert-close-transition:   0.5s opacity ease;
+
+
+// Structure
+%alert {
+  @include box-shadow($alert-spread, $alert-shadow);
+  @include position($alert-position);
+  @include transition(opacity 0.5s ease);
+  border: $alet-border;
+  border-radius: $alert-radius;
+  opacity: $alert-opacity;
+  padding: $alet-padding;
+}
+
+
+@each $alert, $styles in $alerts {
+  $border-color:  nth($styles, 1);
+  $bg-color:      nth($styles, 2);
+  $color:         nth($styles, 3);
+
+  .alert--#{$alert} {
+    @extend %alert;
+    background: $bg-color;
+    border-color: $border-color;
+    color: $color;
+
+    #app-icon {
+      fill: $border-color;
+    }
+
+    // Hide Alert
+      // NOTE: This class should be more descriptive. Possibly is-hidden if close icon is clicked to hide the alert.
+    &.is-active {
+      opacity: $alert-opacity-hidden;
+    }
+  }
+}
+
+.alert__icon,
+.alert__text {
+  display: $alet-display;
+  vertical-align: $alert-v-align;
+}
+
+.alert__text {
+  margin-left: $spacer-echo;
+}
+
+.alert__icon--close {
+  @include transition($alert-close-transition);
+  float: $alert-close-float;
+  height: $alert-close-size;
+  margin-top: $alert-close-margin;
+  width: $alert-close-size;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

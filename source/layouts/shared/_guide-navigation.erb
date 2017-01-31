@@ -1,0 +1,40 @@
+<header class="guide__navigation">
+  <nav role="navigation">
+    <div class="guide__navigation--left">
+      <% link_to "#{config[:root_url] ? config[:root_url] : '/'}", class: 'guide-navigation__logo' do %>
+        <%= inline_svg('logos/logo.svg') %>
+      <% end %>
+    </div>
+    <div class="guide__navigation--right">
+      <button class="guide__navigation__menu-button" type="button" aria-label="Menu" aria-controls="navigation">
+        <div class="guide__navigation__menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </nav>
+</header>
+<div class="guide__navigation__modal">
+  <div class="guide__navigaiton__modal-container container">
+    <ul class="guide__navigation__modal-links row">
+      <% data.navigation.site_navigation.each do |item| %>
+        <li class="guide__navigation__modal-item">
+          <h5 class="guide__navigation__modal-label"><%= item.section_title %></h5>
+          <ul class="guide__navigation__modal-submenu">
+            <% item.sections.each do |section| %>
+              <li class="guide__navigation__modal-submenu-item">
+                <%= link_to section.section_title, request.path.split('/')[0] == 'components' || 'elements' || 'modules' ? "#{config[:root_url] ? config[:root_url] : '/'}#{section.section_link}" : section.section_link, class: 'guide__navigation__modal-link' %>
+              </li>
+            <% end %>
+          </ul>
+        </li>
+      <% end %>
+    </ul>
+    <div class="row">
+      <h2 class="guide__navigation__modal-title">Navigation.</h2>
+    </div>
+  </div>
+</div>

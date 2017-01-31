@@ -1,0 +1,97 @@
+// Tooltip Component
+// ========================================
+
+
+// Variables
+$tooltip-align:              center;
+$tooltip-background:         $white-base;
+$tooltip-margin:             0 auto;
+$tooltip-offset:             null -7em 2.5em null;
+$tool-tip-opacity-0:         0;
+$tool-tip-opacity-1:         1;
+$tooltip-position:           absolute;
+$tooltip-shadow-color:       rgba(35,35,35,0.20);
+$tooltip-shadow-spread:      0 0 10px;
+$tooltip-transition:         opacity 0.35s ease-in-out;
+$tooltip-visibiltiy:         visible;
+$tooltip-width:              225px;
+$tooltip-z-index:            10;
+
+$tooltip-item-display:       inline-block;
+$tooltip-item-position:      relative;
+
+$tooltip-icon-cords:         -5px null null null;
+$tooltip-icon-fill:          $purple-base;
+$tooltip-icon-position:      relative;
+$tooltip-icon-size:          12px;
+
+$tooltip-text-color:         $black-base;
+$tooltip-text-line-height:   normal;
+$tooltip-text-shadow-color:  rgba(0, 0, 0, 0.15);
+$tooltip-text-shadow-spread: 0 5px 10px;
+
+
+// Structure
+.tooltip__item {
+  @include position($tooltip-item-position);
+  display: $tooltip-item-display;
+
+  &:focus,
+  &:hover .tooltip {
+    opacity: $tool-tip-opacity-1;
+    visibility: $tooltip-visibiltiy;
+  }
+
+  .tooltip__label,
+  .tooltip__icon {
+    display: $tooltip-item-display;
+    cursor: help;
+  }
+
+  .tooltip__icon {
+    @include position($tooltip-icon-position, $tooltip-icon-cords);
+    height: $tooltip-icon-size;
+    width: $tooltip-icon-size;
+
+    & #app-icon {
+      fill: $tooltip-icon-fill;
+    }
+  }
+}
+
+.tooltip {
+  @extend .card;
+  @extend .card--small;
+  @include box-shadow($tooltip-shadow-spread, $tooltip-shadow-color);
+  @include position($tooltip-position, $tooltip-offset);
+  @include transition ($tooltip-transition);
+  opacity: $tool-tip-opacity-0;
+  text-align: $tooltip-align;
+  width: $tooltip-width;
+  visibility: hidden;
+  z-index: $tooltip-z-index;
+
+  .tooltip__text {
+    @include font-type($primary-sans-serif, normal, 400);
+    @include s-golf;
+    line-height: $tooltip-text-line-height;
+    margin: 0;
+  }
+
+  &::after,
+  &::before {
+    content: '';
+    margin: 0 auto;
+  }
+
+  &::after {
+    @include position(absolute, null 0 -12px 0);
+    @include triangle(25px, $white-base, down);
+
+  }
+
+  &:before {
+    @include position(absolute, null 0 -13px 0);
+    @include triangle(26px, $grey-light, down);
+  }
+}

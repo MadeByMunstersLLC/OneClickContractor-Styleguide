@@ -1,0 +1,56 @@
+<div class="page-article__content-section" id="loading">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Loading Indicator</h2>
+      <p class="text--large">Please hold, your call is very important us.</p>
+      <p class="text">Are you loading a lot of content? Is it taking a long time? No worries. Make sure to throw in a loading indicator so the user knows that the page is not broken, it is simply trying to grab all of the elements needed to build it properply.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <div class="loading-indicator">
+      <ul>
+        <li class="loading-indicator__item"></li>
+        <li class="loading-indicator__item"></li>
+        <li class="loading-indicator__item"></li>
+      </ul>
+      <h5 class="loading-indicator__label">Loading</h5>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <div class="loading-indicator">
+    <ul>
+      <li class="loading-indicator__item"></li>
+      <li class="loading-indicator__item"></li>
+      <li class="loading-indicator__item"></li>
+    </ul>
+    <h5 class="loading-indicator__label">Loading</h5>
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a loading indicator.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.loading-indicator</td>
+          <td class="table__body-item">This should be applied to the parent element that wraps both the indicator text and animation elements. <% code("html") do %><div class"loading-indicator"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.loading-indicator__item</td>
+          <td class="table__body-item">Apply this class to three empty list items to create the animating dots. <% code("html") do %><li class="loading-indicator__item"></li><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.loading-indicator__label</td>
+          <td class="table__body-item">Apply this class to the text element that informs users what is happening. <% code("html") do %><h5 class="loading-indicator__label">Loading</h5><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

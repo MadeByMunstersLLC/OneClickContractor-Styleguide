@@ -1,0 +1,98 @@
+// Popout Component
+// ========================================
+
+// Variables
+$popout-cords:                  30px 0 null null;
+$popout-opacity:                0;
+$popout-position:               absolute;
+$popout-transition:             opacity 0.75s ease;
+$popout-shadow:                 rgba(35,35,35,0.20);
+$popout-spread:                 0 0 15px;
+$popout-z-index:                -1;
+
+$popout-inverse-cords:          null 0 20px null;
+
+$popout-max-height:             300px;
+$popout-max-overflow:           scroll;
+
+$popout-opacity-active:         1;
+$popout-z-index-active:         1;
+
+$popout-container-align:        left;
+$popout-container-display:      inline-block;
+$popout-container-position:     relative;
+
+$popout-item-display:           block;
+$popout-item-margin:            $spacer-delta;
+
+$popout-icon-width:             15px;
+$popout-icon-v-align:           middle;
+
+$popout-link-color:             $black-base;
+$popout-link-white-space:       nowrap;
+
+
+
+// Structure
+.popout {
+  @extend .card;
+  @extend .card--small;
+  @include box-shadow($popout-spread, $popout-shadow);
+  @include transition($popout-transition);
+  @include position($popout-position, $popout-cords);
+  opacity: $popout-opacity;
+  z-index: $popout-z-index;
+
+  &.is-active {
+    opacity: $popout-opacity-active;
+    z-index: $popout-z-index-active;
+  }
+
+  // Popout Inverse
+  &.popout--inverse {
+    @include position($popout-position, $popout-inverse-cords);
+    top: inherit;
+  }
+
+  &.popout--max-height {
+    max-height: $popout-max-height;
+    overflow-y: $popout-max-overflow;
+  }
+}
+
+.popout__container {
+  @include position($popout-container-position);
+  display: $popout-container-display;
+  text-align: $popout-container-align;
+}
+
+.popout__item {
+  display: $popout-item-display;
+
+  &:not(:last-child) {
+    margin-bottom: $spacer-delta;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  .popout__icon {
+    margin-right: $popout-item-margin;
+    width: $popout-icon-width;
+    vertical-align: $popout-icon-v-align;
+
+    #app-icon {
+      fill: $grey-dark;
+    }
+  }
+}
+
+.popout__link {
+  color: $popout-link-color;
+  white-space: $popout-link-white-space;
+
+  &:hover {
+    color: lighten($popout-link-color, 30%);
+  }
+}

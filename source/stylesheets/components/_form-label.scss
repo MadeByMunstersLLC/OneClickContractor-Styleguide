@@ -1,0 +1,46 @@
+// Form Label Component
+// ========================================
+
+
+// Variabeles
+$form-label-color:          $purple-base;
+$form-label-display:        block;
+$form-label-margin:         $spacer-delta;
+$form-label-transform:      uppercase;
+
+$form-label-offset-margin:  $spacer-charlie + 3px;
+
+$fieldset-border:           1px solid $grey-base;
+$fieldset-margin:           0 0 $spacer-charlie;
+
+$form-label-error-color:    $red-base;
+
+
+// Structure
+label,
+.form__label {
+  @extend .text--bold;
+  @include s-golf;
+  color: $form-label-color;
+  display: $form-label-display;
+  margin-bottom: $form-label-margin;
+  text-transform: $form-label-transform;
+}
+
+// Offset if label is not present
+  // NOTE: Use to position button correctly on horizontal forms
+.label--offset {
+  margin-top: $form-label-offset-margin;
+}
+
+// Fieldset
+.fieldset--border {
+  border-bottom: $fieldset-border;
+  margin: $fieldset-margin;
+}
+
+
+// Label Modifiers
+.input--error {
+  color: $form-label-error-color;
+}

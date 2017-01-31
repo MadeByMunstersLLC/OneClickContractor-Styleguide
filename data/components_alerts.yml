@@ -1,0 +1,7 @@
+alerts:
+  - text: High fives! You have successfully updated the module.
+    type: success
+  - text: Minor Update. Click here to update your module.
+    type: caution
+  - text: Oh snap! Something went wrong when trying to save.
+    type: warning

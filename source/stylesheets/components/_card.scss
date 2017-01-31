@@ -1,0 +1,54 @@
+// Card Component Directory
+// ========================================
+
+
+// Variables
+$card-background:           $white-base;
+$card-border:               1px solid $grey-light;
+$card-display:              block;
+$card-margin:               0 0 $spacer-charlie;
+$card-padding:              $spacer-charlie;
+$card-radius:               1px;
+
+$card-margin-small:         0 0 $spacer-delta;
+$card-padding-small:        $spacer-delta;
+
+$card-margin-extra-small:   0 0 $spacer-echo;
+$card-padding-extra-small:  10px $spacer-delta;
+
+$card-draggable-shadow:     rgba(48, 54, 67, 0.1);
+$card-draggable-spread:     0 0 10px;
+$card-draggable-transition: all 0.5s ease;
+
+
+// Structure
+.card {
+  background: $card-background;
+  border: $card-border;
+  border-radius: $card-radius;
+  display: $card-display;
+  margin: $card-margin;
+  padding: $card-padding;
+}
+
+// Card Styles
+.card--small {
+  margin: $card-margin-small;
+  padding: $card-padding-small;
+}
+
+.card--extra-small {
+  margin: $card-margin-extra-small;
+  padding: $card-padding-extra-small;
+}
+
+
+// Card Hover Modifiers
+.card--draggable {
+  @include transition($card-draggable-transition);
+  cursor: move;
+
+  &:hover {
+    @include box-shadow($card-draggable-spread, $card-draggable-shadow);
+  }
+}

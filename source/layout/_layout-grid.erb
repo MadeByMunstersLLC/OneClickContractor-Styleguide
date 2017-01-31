@@ -1,0 +1,110 @@
+<div class="page-article__content-section" id="grid">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Grid</h2>
+      <p class="text--large">Let's make sure everything is in the right place.</p>
+      <p class="text">While the core structure of the site is not built on a grid, interior components use a 12 column grid to create clean, clear spacing. There are three core grid breakpoints: small, medium, large. Each is used to dedicate space to elements depending on the viewport's width.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <div class="container">
+      <ul class="row">
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+        <li class="columns-1__l highlight--bravo">1 COl</li>
+      </ul>
+      <ul class="row">
+        <li class="columns-3__m columns-4__l highlight--bravo">4 Col Lg / 3 Col Md</li>
+        <li class="columns-3__m columns-4__l highlight--bravo">4 Col Lg / 3 Col Md</li>
+        <li class="columns-3__m columns-4__l highlight--bravo">4 Col Lg / 3 Col Md</li>
+      </ul>
+      <ul class="row">
+        <li class="columns-2__s columns-6__l highlight--bravo">6 Col Lg / 2 Col Sm</li>
+        <li class="columns-2__s columns-6__l highlight--bravo">6 Col Lg / 2 Col Sm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Varibles -->
+  $small: Viewport with min-width of em(320)
+  $medium: Viewport with min-width of em(720)
+  $large: Viewport with min-width of em(1024)
+
+  $container: Max-width is 1140px
+  $gutter: Width is 30px
+  $column: Width is 65px
+
+  <!-- Sample 1 -->
+  <ul class="row">
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+    <li class="columns-1__l">1 COl</li>
+  </ul>
+
+  <!-- Sample 2 -->
+  <ul class="row">
+    <li class="columns-3__m columns-4__l">4 Col Lg / 3 Col Md</li>
+    <li class="columns-3__m columns-4__l">4 Col Lg / 3 Col Md</li>
+    <li class="columns-3__m columns-4__l">4 Col Lg / 3 Col Md</li>
+  </ul>
+
+  <!-- Sample 3 -->
+  <ul class="row">
+    <li class="columns-2__s columns-6__l">6 Col Lg / 2 Col Sm</li>
+    <li class="columns-2__s columns-6__l">6 Col Lg / 2 Col Sm</li>
+  </ul>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a grid layout.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.container</td>
+          <td class="table__body-item">This should be applied to the element you want to set the max-width of the view on. Very rarely used in Atomizer. <% code("html") do %><div class"container"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.row</td>
+          <td class="table__body-item">This should be applied to the element that contains a column layout. It sets a clearfix on the column layout and forces any content outside of the element below the floating columns. <% code("html") do %><div class"row"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.columns-#{$column}__s</td>
+          <td class="table__body-item">This should be applied to the element you want to take on the small viewport column layout. <% code("html") do %><div class"columns-4__s"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.columns-#{$column}__m</td>
+          <td class="table__body-item">This should be applied to the element you want to take on the medium viewport column layout. <% code("html") do %><div class"columns-9__m"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.columns-#{$column}__l</td>
+          <td class="table__body-item">This should be applied to the element you want to take on the large viewport column layout. <% code("html") do %><div class"columns-12__l"></div><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

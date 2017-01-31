@@ -1,0 +1,96 @@
+// Chip Component
+// ========================================
+
+
+// Variables
+$chip-display:            inline;
+$chip-float:              left;
+$chip-hide:               none;
+$chip-margin:             $spacer-delta 0 0;
+
+$chip-right-margin-lg:    $spacer-echo 0 0 $spacer-delta;
+$chip-right-margin-md:    $spacer-echo 0 0 0;
+$chip-right-width-e-lg:   65%;
+$chip-right-width-lg:     55%;
+
+$chip-image-background:   $purple-base;
+$chip-image-color:        $white-base;
+$chip-image-overflow:     hidden;
+$chip-image-position:     relative;
+$chip-image-radius:       30em;
+$chip-image-size:         40px;
+$chip-image-weight:       600;
+
+$chip-text-line-height:   1.25;
+
+
+
+// Structure
+.chip {
+  @include clearfix;
+  margin: $chip-margin;
+}
+
+
+// Chip Layout
+.chip--left,
+.chip--right {
+  float: $chip-float;
+}
+
+.chip--left {
+  display: $chip-hide;
+
+  @include media($large) {
+    display: $chip-display;
+  }
+}
+
+.chip--right {
+  display: $chip-display;
+  width: 100%;
+  margin: $chip-right-margin-md;
+
+  @include media($large) {
+    margin: $chip-right-margin-lg;
+    width: $chip-right-width-lg;
+  }
+
+  @include media($extra-large) {
+    margin: $chip-right-margin-lg;
+    width: $chip-right-width-e-lg;
+  }
+}
+
+
+// Chip Image
+.chip__image {
+  @include position($chip-image-position);
+  background: $chip-image-background;
+  border-radius: $chip-image-radius;
+  color: $chip-image-color;
+  font-weight: $chip-image-weight;
+  height: $chip-image-size;
+  overflow: $chip-image-overflow;
+  width: $chip-image-size;
+
+  img {
+    width: 100%;
+  }
+
+  .chip__icon {
+    @include center(true, true);
+    width: 40%;
+  }
+
+  .chip__image--none {
+    @include center(true, true);
+  }
+}
+
+
+// Chip Text
+.chip__text {
+  @include s-golf;
+  line-height: $chip-text-line-height;
+}

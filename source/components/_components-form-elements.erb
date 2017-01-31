@@ -1,0 +1,175 @@
+<div class="page-article__content-section" id="form-elements">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Form Elements</h2>
+      <p class="text--large">Let's make some form magic.</p>
+      <p class="text">Form elements can be used for various reasons within the interface. They can be used to collect and store information or they could be used to lookup / search for specific assets. There are several types of form elements all have been documented below.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <input type="text" placeholder="Placeholder text here" />
+    <input type="text" placeholder="Placeholder text here" disabled />
+    <input type="search" placeholder="Placeholder text here" class="input--search" />
+    <select>
+      <option>Select Option One</option>
+      <option>Select Option Two</option>
+      <option>Select Option Three</option>
+    </select>
+    <select disabled>
+      <option>Select Option One</option>
+      <option>Select Option Two</option>
+      <option>Select Option Three</option>
+    </select>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Input Text -->
+  <input type="text" placeholder="Placeholder text here" />
+
+  <!-- Input Text Disabled -->
+  <input type="text" placeholder="Placeholder text here" disabled />
+
+  <!-- Input Search -->
+  <input type="search" placeholder="Placeholder text here" class="input--search" />
+
+  <!-- Input Select -->
+  <select>
+    <option>Select Option One</option>
+    <option>Select Option Two</option>
+    <option>Select Option Three</option>
+  </select>
+
+  <!-- Input Select Disabled -->
+  <select disabled>
+    <option>Select Option One</option>
+    <option>Select Option Two</option>
+    <option>Select Option Three</option>
+  </select>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create special form inputs.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.input--search</td>
+          <td class="table__body-item">To add a the search icon to a text input, add this class to your search input. <% code("html") do %><input type="search" placeholder="Placeholder text here" class="input--search" /><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <div class="checkbox--label">
+      <input type="checkbox" />
+      <span>Checkbox item text</span>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Input Checkbox -->
+  <div class="checkbox--label">
+    <input type="checkbox" />
+    <span>Checkbox item text</span>
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a checkbox.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.checkbox--label</td>
+          <td class="table__body-item">When creating a checkbox with an adjacent line of text, place this class on the parent element. Then, use a checkbox input and span for input text as direct children. <% code("html") do %><div class="checkbox--label"> <input type="checkbox" /> <span>Checbox item text</span> </div> <% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <div class="button--add-on__container button--add-on__container--full">
+      <input type="text" placeholder="Placeholder text here" class="input--add-on" />
+      <input type="submit" value="Submit" class="input--add-on__button button--alpha" />
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Input search with add on -->
+  <div class="button--add-on__container">
+    <input type="text" placeholder="Placeholder text here" class="input--add-on" />
+    <input type="submit" value="Submit" class="input--add-on__button button--alpha" />
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a input field with a button add on.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--add-on__container</td>
+          <td class="table__body-item">Place this class on the outer parent container. <% code("html") do %> <div class="button--add-on__container"></div> <% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.input--add-on</td>
+          <td class="table__body-item">Place this class on the form input. <% code("html") do %> <input type="text" placeholder="Placeholder text here" class="input--add-on" /> <% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.input--add-on__button</td>
+          <td class="table__body-item">Place this class on the form input button. <% code("html") do %> <input type="submit" value="Submit" class="input--add-on__button" /> <% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.button--[type]</td>
+          <td class="table__body-item">Depending on the action of the form input, add the appropriate button type to the form input button to apply the correct styling. <% code("html") do %> <input type="submit" value="Submit" class="input--add-on__button button--alpha" /> <% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <label class="form__label input--error">Form Label</label>
+    <input type="text" placeholder="Placeholder text here" class="input--error" />
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Form Label / Input With Error -->
+  <label class="form__label input--error">Form Label</label>
+  <input type="text" placeholder="Placeholder text here" class="input--error" />
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to add inline error messages.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.form__label.input--error</td>
+          <td class="table__body-item">Place this class on the label that corresponds with the input that contains the error. <% code("html") do %> <label class="form__label input--error">Form Label</label> <% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">input.input--error</td>
+          <td class="table__body-item">Place this class on the input that contains the error. <% code("html") do %> <input type="text" placeholder="Placeholder text here" class="input--error" /> <% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

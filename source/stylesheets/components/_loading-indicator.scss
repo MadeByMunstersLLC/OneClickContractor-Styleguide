@@ -1,0 +1,49 @@
+// Loading Indicator Component
+// ========================================
+
+// Variables
+$loading-indicator-margin:           ($spacer-alpha * 2) auto $spacer-alpha;
+$loading-indicator-width:            70px;
+$loading-indicator-text-align:       center;
+
+$loading-indicator-item-bg:          $grey-base;
+$loading-indicator-item-dimensions:  10px;
+$loading-indicator-item-radius:      30em;
+
+$loading-indicator-label-color:      $grey-base;
+
+
+// Structure
+.loading-indicator {
+  margin: $loading-indicator-margin;
+  width: $loading-indicator-width;
+  text-align: $loading-indicator-text-align;
+}
+
+.loading-indicator__item {
+  @include animation(sk-bouncedelay 1.4s infinite ease-in-out both);
+  background-color: $loading-indicator-item-bg;
+  border-radius: $loading-indicator-item-radius;
+  height: $loading-indicator-item-dimensions;
+  display: inline-block;
+  width: $loading-indicator-item-dimensions;
+
+  &:first-child {
+    @include animation-delay(-0.32s);
+  }
+
+  &:nth-child(2) {
+    @include animation-delay(-0.16s);
+  }
+}
+
+.loading-indicator__label {
+  @extend .form__label;
+  color: $loading-indicator-label-color;
+}
+
+// Loading Indicator
+@include keyframes(sk-bouncedelay) {
+  0%, 80%, 100% { @include transform(scale(0)); }
+  40% { @include transform(scale(1.0)); }
+}

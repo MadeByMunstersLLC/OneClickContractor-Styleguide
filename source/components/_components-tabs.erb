@@ -1,0 +1,95 @@
+<div class="page-article__content-section" id="tabs">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Tabs</h2>
+      <p class="text--large">Separate content into sections.</p>
+      <p class="text">Do you need to split a complex view up to make it more manageable? Just use tabs. This component should be used as an in-page navigation tool. Tabs are meant to split complicated views up into simplified subviews that allow a user to focus in on one specific task.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <div class="tabs">
+      <ul class="tab__list">
+        <li class="tab__item is-active" data-tab="tab-1">Edit Scenario</li>
+        <li class="tab__item" data-tab="tab-2">Scenario Flow</li>
+        <li class="tab__item" data-tab="tab-3">Scenario History</li>
+        <li class="tab__item" data-tab="tab-4">Settings</li>
+      </ul>
+    </div>
+    <div id="tab-1" class="tab__content is-active">
+      Tab Content 1
+    </div>
+    <div id="tab-2" class="tab__content">
+      Tab Content 2
+    </div>
+    <div id="tab-3" class="tab__content">
+      Tab Content 3
+    </div>
+    <div id="tab-4" class="tab__content">
+      Tab Content 4
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Tabs -->
+  <div class="tabs">
+    <!-- Tab list -->
+    <ul class="tab__list">
+      <li class="tab__item is-active" data-tab="tab-1">Edit Scenario</li>
+      <li class="tab__item" data-tab="tab-2">Scenario Flow</li>
+      <li class="tab__item" data-tab="tab-3">Scenario History</li>
+      <li class="tab__item" data-tab="tab-4">Settings</li>
+    </ul>
+  </div>
+
+  <!-- Tab Panes -->
+  <div id="tab-1" class="tab__content is-active">
+    Tab Content 1
+  </div>
+
+  <div id="tab-2" class="tab__content">
+    Tab Content 2
+  </div>
+
+  <div id="tab-3" class="tab__content">
+    Tab Content 3
+  </div>
+
+  <div id="tab-4" class="tab__content">
+    Tab Content 4
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create tabs.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.tabs</td>
+          <td class="table__body-item">This should be applied to the parent element that wraps all of the tabs. <% code("html") do %><div class"tabs"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.tab__list</td>
+          <td class="table__body-item">This should be applied to the unordered list element that contains the tab navigation list. <% code("html") do %><ul class"tab__list"></ul><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.tab__item</td>
+          <td class="table__body-item">This should be applied to the list element that contains the tab navigation link. <% code("html") do %><li class"tab__item"></li><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.tab__content</td>
+          <td class="table__body-item">This should be applied to the element that contains a tab's content. <% code("html") do %><div class"tab__content"></p><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.is-active</td>
+          <td class="table__body-item">This should be applied to the element that is active or displaying. <% code("html") do %><div class"tab__content is-active"></p><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

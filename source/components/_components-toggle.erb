@@ -1,0 +1,139 @@
+<div class="page-article__content-section" id="toggle">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Toggle</h2>
+      <p class="text--large">Now you see me. Now you don't.</p>
+      <p class="text">Do you need to present a lot of content or items, but don't want them to take up a lot of space? A toggle might be a good way to display this content then. Toggles are meant to allow users to hide and show content when they need it.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <div class="toggle">
+      <div class="toggle__header">
+        <h5 class="form__label">Toggle State Standard</h5>
+        <a href="" class="toggle__trigger">
+          <%= inline_svg("icons/plus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--plus") %>
+          <%= inline_svg("icons/minus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--minus") %>
+        </a>
+      </div>
+      <div class="toggle__body">
+        <p>Toggle body copy.</p>
+      </div>
+    </div>
+    <br/>
+    <div class="toggle toggle--border">
+      <div class="toggle__header">
+        <h5 class="form__label">Toggle State With Border</h5>
+        <a href="" class="toggle__trigger">
+          <%= inline_svg("icons/plus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--plus") %>
+          <%= inline_svg("icons/minus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--minus") %>
+        </a>
+      </div>
+      <div class="toggle__body">
+        <p>Toggle body copy.</p>
+      </div>
+    </div>
+    <br/>
+    <div class="toggle toggle--card">
+      <div class="toggle__header">
+        <h5 class="toggle--card-title form__label">Toggle State With Card Style</h5>
+        <a href="" class="toggle__trigger">
+          <%= inline_svg("icons/plus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--plus") %>
+          <%= inline_svg("icons/minus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--minus") %>
+        </a>
+      </div>
+      <div class="toggle__body">
+        <p class="margin--reset">Toggle body copy.</p>
+      </div>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Standard Toggle -->
+  <div class="toggle">
+    <div class="toggle__header">
+      <h5>Toggle Title</h5>
+      <a href="" class="toggle__trigger">
+        <%= inline_svg("icons/plus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--plus") %>
+        <%= inline_svg("icons/minus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--minus") %>
+      </a>
+    </div>
+    <div class="toggle__body">
+      <p>Toggle body copy.</p>
+    </div>
+  </div>
+
+  <!-- Standard Toggle + Border -->
+  <div class="toggle toggle--border">
+    <div class="toggle__header">
+      <h5>Toggle Title</h5>
+      <a href="" class="toggle__trigger">
+        <%= inline_svg("icons/plus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--plus") %>
+        <%= inline_svg("icons/minus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--minus") %>
+      </a>
+    </div>
+    <div class="toggle__body">
+      <p>Toggle body copy.</p>
+    </div>
+  </div>
+
+  <!-- Toggle Card -->
+  <div class="toggle toggle--card">
+    <div class="toggle__header">
+      <h5 class="toggle--card-title form__label">Toggle Title</h5>
+      <a href="" class="toggle__trigger">
+        <%= inline_svg("icons/plus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--plus") %>
+        <%= inline_svg("icons/minus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--minus") %>
+      </a>
+    </div>
+    <div class="toggle__body">
+      <p class="margin--reset">Toggle body copy.</p>
+    </div>
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a toggle element.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.toggle</td>
+          <td class="table__body-item">This should be applied to the parent element that wraps the toggle element. <% code("html") do %><div class"toggle"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.toggle__header</td>
+          <td class="table__body-item">Add this class to the header of the element. It should wrap the toggle title and toggle trigger icons. <% code("html") do %><div class"toggle__header"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.toggle__trigger</td>
+          <td class="table__body-item">Add this class to the element that acts as the toggle trigger. <% code("html") do %><a href="" class="toggle__trigger"></a><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.toggle__icon</td>
+          <td class="table__body-item">Add this class to the toggle plus and minus icons. Each icon should be an inline SVG and should have this class. <% code("html") do %><%= inline_svg("icons/minus-icon.svg", class: "toggle__icon toggle__icon--small toggle__icon--minus") %><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.toggle__body</td>
+          <td class="table__body-item">Add this class to the element that acts as the toggle body. <% code("html") do %><div class="toggle__body"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.is-active</td>
+          <td class="table__body-item">On click, this class should be added to the toggle trigger and toggle body.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.toggle--border</td>
+          <td class="table__body-item">Add this modifier to the toggle parent if you would like to add a border to the bottom of the toggle element. Good for lists of toggle elements. <% code("html") do %><div class="toggle toggle--border"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.toggle--card</td>
+          <td class="table__body-item">Add this modifier to the toggle parent if you would like to style the toggle element like a card. <% code("html") do %><div class="toggle toggle--card"></div><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

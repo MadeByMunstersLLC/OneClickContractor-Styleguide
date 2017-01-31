@@ -1,0 +1,51 @@
+// Highlight Component
+// ========================================
+
+
+// Variables
+$highlight-align:          center;
+$highlight-display:        block;
+$highlight-margin:         0 0 $spacer-delta;
+$highlight-padding:        $spacer-echo;
+
+$highlight-text-weight:    600;
+$highlight-text-transform: uppercase;
+
+$highlight-nest-margin:    $spacer-delta $spacer-echo;
+
+
+// Structure
+%highlight {
+  display: $highlight-display;
+  margin: $highlight-margin;
+  padding: $highlight-padding;
+  text-align: $highlight-align;
+}
+
+@each $highlight, $styles in $highlights {
+  $bg-color:      nth($styles, 1);
+  $color:         nth($styles, 2);
+  $border-style:  nth($styles, 3);
+
+  .highlight--#{$highlight} {
+    @extend %highlight;
+    background: $bg-color;
+    border: 1px $border-style $color;
+    color: $color;
+  }
+}
+
+// Highlight Text Styles
+.highlight__text--lead {
+  font-weight: $highlight-text-weight;
+  text-transform: $highlight-text-transform;
+}
+
+.highlight__text--heavy {
+  font-weight: $highlight-text-weight;
+}
+
+// Nest Highlight
+.highlight--nested {
+  margin: $highlight-nest-margin;
+}

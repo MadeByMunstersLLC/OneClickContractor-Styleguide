@@ -1,0 +1,77 @@
+<div class="page-article__content-section" id="offsets">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Offsets</h2>
+      <p class="text--large">Just like the Salt N' Pepa song Push It.</p>
+      <p class="text">Offsets help to push elements away from one another when extra space or a gap is needed. Offsets are used similar to columns, but they leave a gap between two elements.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <ul class="row">
+      <li class="columns-1__l offset-1__l highlight--bravo">1 COl</li>
+      <li class="columns-1__l offset-1__l highlight--bravo">1 COl</li>
+      <li class="columns-1__l offset-1__l highlight--bravo">1 COl</li>
+      <li class="columns-1__l offset-1__l highlight--bravo">1 COl</li>
+      <li class="columns-1__l offset-1__l highlight--bravo">1 COl</li>
+      <li class="columns-1__l offset-1__l highlight--bravo">1 COl</li>
+    </ul>
+    <ul class="row">
+      <li class="columns-3__m columns-4__l highlight--bravo">4 Col Lg / 3 Col Md</li>
+      <li class="columns-3__m offset-3__m columns-4__l offset-4__l highlight--bravo">4 Col Lg / 3 Col Md </li>
+    </ul>
+    <ul class="row">
+      <li class="columns-2__s columns-6__l highlight--bravo">6 Col Lg / 2 Col Sm</li>
+      <li class="columns-1__s offset-1__s columns-3__l offset-3__l highlight--bravo">6 Col Lg / 2 Col Sm</li>
+    </ul>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Sample 1 -->
+  <ul class="row">
+    <li class="columns-1__l offset-1__l">1 COl</li>
+    <li class="columns-1__l offset-1__l">1 COl</li>
+    <li class="columns-1__l offset-1__l">1 COl</li>
+    <li class="columns-1__l offset-1__l">1 COl</li>
+    <li class="columns-1__l offset-1__l">1 COl</li>
+    <li class="columns-1__l offset-1__l">1 COl</li>
+  </ul>
+
+  <!-- Sample 2 -->
+  <ul class="row">
+    <li class="columns-3__m columns-4__l">4 Col Lg / 3 Col Md</li>
+    <li class="columns-3__m offset-3__m columns-4__l offset-4__l">4 Col Lg / 3 Col Md </li>
+  </ul>
+
+  <!-- Sample 3 -->
+  <ul class="row">
+    <li class="columns-2__s columns-6__l">6 Col Lg / 2 Col Sm</li>
+    <li class="columns-1__s offset-1__s columns-3__l offset-3__l">6 Col Lg / 2 Col Sm</li>
+  </ul>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a grid layout.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.offset-#{$column}__s</td>
+          <td class="table__body-item">This should be applied to the element you want to push away from another small element. <% code("html") do %><div class"offset-2__s"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.offset-#{$column}__m</td>
+          <td class="table__body-item">This should be applied to the element you want to push away from another medium element. <% code("html") do %><div class"offset-3__m"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.offset-#{$column}__l</td>
+          <td class="table__body-item">This should be applied to the element you want to push away from another large element. <% code("html") do %><div class"offset-6__l"></div><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

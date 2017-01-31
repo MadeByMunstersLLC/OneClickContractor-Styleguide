@@ -1,0 +1,48 @@
+// Table Component Style
+// ========================================
+
+// Variables
+$table-margin:                $spacer-delta 0;
+$table-width:                 100%;
+
+$table-header-item-align:     left;
+$table-header-item-bg-color:  $white-dark;
+$table-header-item-border:    1px solid $grey-light;
+$table-header-item-color:     $grey-dark;
+$table-header-item-padding:   $spacer-delta;
+$table-header-item-transform: uppercase;
+$table-header-item-weight:    600;
+
+$table-body-item-border:      1px solid $grey-light;
+$table-body-item-line-height: 1.5;
+$table-body-item-padding:     $spacer-charlie $spacer-delta;
+
+
+
+// Structure
+.table {
+  margin: $table-margin;
+  width: $table-width;
+}
+
+
+// Table Header
+.table__header-item {
+  @include s-golf;
+  background-color: $table-header-item-bg-color;
+  border-bottom: $table-header-item-border;
+  border-top: $table-header-item-border;
+  color: $table-header-item-color;
+  font-weight: $table-header-item-weight;
+  padding: $table-header-item-padding;
+  text-align: $table-header-item-align;
+  text-transform: $table-header-item-transform;
+}
+
+
+// Table Body
+.table__body-item {
+  border-bottom: $table-body-item-border;
+  padding: $table-body-item-padding;
+  line-height: $table-body-item-line-height;
+}

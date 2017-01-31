@@ -1,0 +1,24 @@
+<div class="page-article__content-section" id="icons">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Iconography</h2>
+      <p class="text--large">Basic shapes mixed with straight lines define the iconography set for Atomizer. The simple icons are used to draw attention to items users can take action on.</p>
+      <p class="content__text">Icons should be used sparingly throughout the application's interface. When text takes up too much room or an action needs special attention an icon may be used. Below is a sample of the icons avaliable to use. Icons will be added to the kit as the interface grows.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <ul class="list">
+      <% data.element_icons.icons.each do |i| %>
+        <li class="icon">
+          <span class="icon__box">
+            <%= inline_svg(i.src, class: 'icon__image') %>
+          </span>
+          <h5 class="icon__title"><%= i.title %></h5>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+  <div class="content-section__row">
+    <a href="../images/downloads/icons.zip" class="button--bravo inline-block" download>Download Icons</a>
+  </div>
+</div>

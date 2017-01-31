@@ -1,0 +1,32 @@
+---
+title: Design Components | Red Ventures Atomizer.
+header_title: Components.
+---
+
+<!-- Page Variables -->
+<% sidenav = data.navigation.site_navigation.select {|item| request.path.split('/')[0] == item.section_url} %>
+
+<article class="guide__page-article">
+
+  <!-- Page Sections -->
+  <div class="page-article__content">
+    <%= partial 'components/_components-alerts' %>
+    <%= partial 'components/_components-badges' %>
+    <%= partial 'components/_components-buttons' %>
+    <%= partial 'components/_components-cards' %>
+    <%= partial 'components/_components-chips' %>
+    <%= partial 'components/_components-form-elements' %>
+    <%= partial 'components/_components-highlights' %>
+    <%= partial 'components/_components-links' %>
+    <%= partial 'components/_components-loading-indicator' %>
+    <%= partial 'components/_components-modals' %>
+    <%= partial 'components/_components-popouts' %>
+    <%= partial 'components/_components-tables' %>
+    <%= partial 'components/_components-tabs' %>
+    <%= partial 'components/_components-toggle' %>
+    <%= partial 'components/_components-tooltips' %>
+  </div>
+
+  <!-- Page Sidebar -->
+  <%= partial 'layouts/shared/_guide-page-nav', locals: {sidenav: sidenav} %>
+</article>

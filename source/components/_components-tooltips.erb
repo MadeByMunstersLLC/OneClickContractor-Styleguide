@@ -1,0 +1,62 @@
+<div class="page-article__content-section" id="tooltips">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Tooltips</h2>
+      <p class="text--large">Need a little help or guidance?</p>
+      <p class="text">If you want to provide some information about a feature or form element, a tooltip is a great idea. This component should be used to provide just enough information to help users understand a particular part of the interface. Keep the content inside of the tooltip to a minimum.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <div class="tooltip__item">
+      <label class="tooltip__label label">Need Help</label>
+      <%= inline_svg("icons/help-icon.svg", class: "tooltip__icon") %>
+      <figure class="tooltip">
+        <p class="tooltip__text">Need help with something? Read this message for more details.</p>
+      </figure>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <div class="tooltip__item">
+    <label class="tooltip__label label">Need Help</label>
+    <%= inline_svg("icons/help-icon.svg", class: "tooltip__icon") %>
+    <figure class="tooltip">
+      <p class="tooltip__text">Need help with something? Read this message for more details.</p>
+    </figure>
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a tooltip.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.tooltip__item</td>
+          <td class="table__body-item">Apply this class to the parent wrapper. <% code("html") do %><div class"tooltip__item"></div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.tooltip__label</td>
+          <td class="table__body-item">Apply this class to the label that sits inside of the tooltip item. <% code("html") do %><label class"tooltip__labe label"> <!-- Label text --> </label><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.tooltip__icon</td>
+          <td class="table__body-item">Apply this class to the svg so that the icon fill is correct. <% code("html") do %> <svg width="18" height="18" viewbox="0 0 18 18" xmlns="http://www.w3.org/2000/svg" class="tooltip__icon"><title>help-icon</title><path d="M9 0C4.032 0 0 4.032 0 9s4.032 9 9 9 9-4.032 9-9-4.032-9-9-9zm.9 15.3H8.1v-1.8h1.8v1.8zm1.863-6.975l-.81.828C10.305 9.81 9.9 10.35 9.9 11.7H8.1v-.45c0-.99.405-1.89 1.053-2.547L10.27 7.57c.332-.325.53-.775.53-1.27 0-.99-.81-1.8-1.8-1.8s-1.8.81-1.8 1.8H5.4c0-1.99 1.61-3.6 3.6-3.6s3.6 1.61 3.6 3.6c0 .792-.324 1.512-.837 2.025z" fill="#FFFFFF" fill-rule="evenodd" id="app-icon"></path></svg><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.tooltip</td>
+          <td class="table__body-item">Apply this class to the element that wraps the tooltip content. <% code("html") do %><figure class="tooltip"> <!-- Tooltip --> </figure><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.tooltip__text</td>
+          <td class="table__body-item">Apply this class to the element inside the tooltip that contains the tooltip content. <% code("html") do %><p class="tooltip__content"> <!-- Tooltip content --> </p><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

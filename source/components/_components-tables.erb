@@ -1,0 +1,220 @@
+<div class="page-article__content-section" id="tables">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Tables</h2>
+      <p class="text--large">Everything you need to display tabular data.</p>
+      <p class="text">Use tables sparingly. Tables should be reserved for tabular data and only tabular data. Do not use a table for layout purposes. Tables are good for long lists of similar content.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Table Header</th>
+        <th class="table__header-item">Table Header</th>
+        <th class="table__header-item">Table Header</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item">Table body content goes here.</td>
+          <td class="table__body-item">Table body content goes here.</td>
+          <td class="table__body-item">Table body content goes here.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item">Table body content goes here.</td>
+          <td class="table__body-item">Table body content goes here.</td>
+          <td class="table__body-item">Table body content goes here.</td>
+        </tr>
+        <tr>
+          <td class="table__body-item">Table body content goes here.</td>
+          <td class="table__body-item">Table body content goes here.</td>
+          <td class="table__body-item">Table body content goes here.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Standard Table -->
+  <table class="table">
+
+    <!-- Standard Table Header -->
+    <thead class="table__header">
+      <th class="table__header-item">Table Header</th>
+      <th class="table__header-item">Table Header</th>
+      <th class="table__header-item">Table Header</th>
+    </thead>
+
+    <!-- Standard Table Body -->
+    <tbody class="table__body">
+      <tr>
+
+        <!-- Standard Table Body Item -->
+        <td class="table__body-item">Table body content goes here.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Card Based Table -->
+  <table class="card-table">
+
+    <!-- Card Table Header -->
+    <thead class="card-table__header">
+      <tr>
+        <th class="card-item card-item--large">Scenario Title</th>
+      </tr>
+    </thead>
+
+
+    <!-- Card Table Body -->
+    <tbody class="card-table__body">
+      <tr class="card card--small">
+
+        <!-- Card Table Item Large -->
+        <td class="card-item card-item--large">
+          <h4 class="title"></h4>
+        </td>
+
+        <!-- Card Table Item Base -->
+        <td class="card-item">DirecTV</td>
+      </tr>
+
+      <!-- Hack to provide space -->
+      <tr class="spacer"></tr>
+    </tbody>
+  </table>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a table.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.table</td>
+          <td class="table__body-item">This should be applied to the table element. <% code("html") do %><table class="table"> <!-- Table --> </table><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.table__header</td>
+          <td class="table__body-item">Apply to the table head. <% code("html") do %><thead class="table__header"> <!-- Table Header --> </thead><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.table__header-item</td>
+          <td class="table__body-item">Apply to the table head items. <% code("html") do %><th class="table__header-item"> <!-- Table Header Item --> </th><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.table__body</td>
+          <td class="table__body-item">Apply to the table body. <% code("html") do %><tbody class="table__body"> <!-- Table Body --> </tbody><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.table__body-item</td>
+          <td class="table__body-item">Apply to the table body items. <% code("html") do %><td class="table__body-item"> <!-- Table Body Item --> </td><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <table class="card-table">
+      <thead class="card-table__header">
+        <tr>
+          <th class="card-item card-item--large">Scenario Title</th>
+          <th class="card-item">Business</th>
+          <th class="card-item">Status</th>
+          <th class="card-item">Modules</th>
+          <th class="card-item">Rules</th>
+          <th class="card-item">Variations</th>
+          <th class="card-item">Tests</th>
+        </tr>
+      </thead>
+      <tbody class="card-table__body">
+        <tr class="card card--small">
+          <td class="card-item card-item--large">
+            <h4 class="title">Myspace Layouts The Missing Element</h4>
+          </td>
+          <td class="card-item">DirecTV</td>
+          <td class="card-item">
+            <i class="indicator--alpha "></i>
+            active
+          </td>
+          <td class="card-item">122</td>
+          <td class="card-item">34</td>
+          <td class="card-item">3</td>
+          <td class="card-item">1</td>
+        </tr>
+        <tr class="spacer"></tr>
+        <tr class="card card--small">
+          <td class="card-item card-item--large">
+            <h4 class="title">Myspace Layouts The Missing Element</h4>
+          </td>
+          <td class="card-item">DirecTV</td>
+          <td class="card-item">
+            <i class="indicator--alpha "></i>
+            active
+          </td>
+          <td class="card-item">122</td>
+          <td class="card-item">34</td>
+          <td class="card-item">3</td>
+          <td class="card-item">1</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+    <!-- Card Table Body -->
+    <tbody class="card-table__body">
+      <tr class="card card--small">
+
+        <!-- Card Table Item Large -->
+        <td class="card-item card-item--large">
+          <h4 class="title"></h4>
+        </td>
+
+        <!-- Card Table Item Base -->
+        <td class="card-item">DirecTV</td>
+      </tr>
+
+      <!-- Hack to provide space -->
+      <tr class="spacer"></tr>
+    </tbody>
+  </table>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a card table.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.card-table</td>
+          <td class="table__body-item">Apply to the table element. <% code("html") do %><table class="card-table"> <!-- Table --> </table><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.card-table__header</td>
+          <td class="table__body-item">Apply to the table header element. <% code("html") do %><thead class="card-table__header"> <!-- Table Header --> </thead><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.card-table__body</td>
+          <td class="table__body-item">Apply to the table body element. <% code("html") do %><tbody class="card-table__header"> <!-- Table Header --> </tbody><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.card-item</td>
+          <td class="table__body-item">Apply to the table elements. <% code("html") do %><td class="card-item"> <!-- Table Item --> </td><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.card-item--large</td>
+          <td class="table__body-item">Modifier to give table element more space. Only use once per-card table. <% code("html") do %><td class="card-item card-item--large"> <!-- Table Item Large --> </td><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

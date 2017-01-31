@@ -1,0 +1,102 @@
+// Toggle Component
+// ========================================
+
+// Variables
+$toggle-border:               1px solid $grey-light;
+$toggle-display-inactive:     none;
+$toggle-display-active:       inline-block;
+$toggle-margin:               0 0 $spacer-charlie;
+$toggle-padding:              0 0 $spacer-delta;
+
+$toggle-header-position:      relative;
+
+$toggle-trigger-cords:        -5px 0 null null;
+$toggle-trigger-position:     absolute;
+
+$toggle-icon-width:           65%;
+
+$toggle-body-height:          0;
+$toggle-body-overflow:        hidden;
+
+$toggle-body-height-active:   auto;
+
+$toggle-card-padding:         $spacer-delta;
+
+
+
+// Structure
+.toggle {
+  margin: $toggle-margin;
+  padding: $toggle-padding;
+
+  &.toggle--border {
+    border-bottom: $toggle-border;
+  }
+}
+
+.toggle__header {
+  @include position($toggle-header-position);
+
+  .toggle__trigger {
+    @include position($toggle-trigger-position, $toggle-trigger-cords);
+
+    // Toggle Icon
+    .toggle__icon {
+
+      #app-icon {
+        fill: $grey-dark;
+      }
+
+      &.toggle__icon--small {
+        width: $toggle-icon-width;
+      }
+    }
+
+    // Inactive Toggle Icons
+    .toggle__icon--minus {
+      display: $toggle-display-inactive;
+    }
+
+    .toggle__icon--plus {
+      display: $toggle-display-active;
+    }
+
+    // Active Toggle Icons
+    &.is-active {
+
+      .toggle__icon--minus {
+        display: $toggle-display-active;
+      }
+
+      .toggle__icon--plus {
+        display: $toggle-display-inactive;
+      }
+    }
+  }
+}
+
+.toggle__body {
+  height: $toggle-body-height;
+  overflow: $toggle-body-overflow;
+
+  &.is-active {
+    height: $toggle-body-height-active;
+    margin-bottom: $spacer-delta;
+  }
+}
+
+.toggle--card {
+  @extend .card;
+  padding: $toggle-card-padding;
+
+  // Standard Toggle Card Title
+  .toggle--card-title {
+    margin: 0;
+  }
+
+  // Toggle Card Body Active
+  .toggle__body.is-active {
+    margin-bottom: 0;
+    margin-top: $spacer-delta;
+  }
+}

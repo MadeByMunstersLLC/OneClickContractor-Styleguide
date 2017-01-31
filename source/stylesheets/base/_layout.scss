@@ -1,0 +1,61 @@
+// Base Layout Stylesheets
+// ========================================
+
+// Global Styles
+html,
+body {
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+body.is-active {
+  @include position(fixed);
+  overflow: hidden;
+  width: 100%;
+}
+
+
+// Clears + Resets
+.clear { clear: both; }
+.clearfix { @include clearfix; }
+
+@each $reset in $resets {
+  $position:  nth($reset, 1);
+  $zero:      nth($reset, 2);
+
+  .margin-reset--#{$position} {
+    margin-#{$position}: $zero;
+  }
+
+  .padding-reset--#{$position} {
+    padding-#{$position}: $zero;
+  }
+};
+
+.margin--reset   { margin:  0; }
+.padding--reeset { padding: 0; }
+
+
+// Floats
+.float--left {
+  @include media($medium) { float: left; }
+}
+
+.float--right {
+  @include media($medium) { float: right; }
+}
+
+
+// Spacers
+@each $spacer in $spacers {
+  $type:   nth($spacer, 1);
+  $value:  nth($spacer, 2);
+
+  .padding-bottom--#{$type} { padding-bottom: $value; }
+  .padding-top--#{$type}    { padding-top:    $value; }
+
+  .margin-bottom--#{$type} { margin-bottom: $value; }
+  .margin-left--#{$type}   { margin-left:   $value; }
+  .margin-right--#{$type}  { margin-right:  $value; }
+  .margin-top--#{$type}    { margin-top:    $value; }
+}

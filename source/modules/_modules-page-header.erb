@@ -1,0 +1,36 @@
+<div class="page-article__content-section" id="page-header-main">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Page Header</h2>
+      <p class="text--large">You know that other thing on the top of every page.</p>
+      <p class="text">The page header module sits directly below the topbar. It's main purpose is to provide in-page navigation to users. It was designed to give users a clear sense of where important actions or information is located on a given page. It contains elements such as, the module title, save or publish actions and imporant messages about module updates.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <header role="header" class="page-header">
+      <a href="/scenario/index.html" class="page-header__back-link">
+        <%= inline_svg("icons/arrow-left-icon.svg") %>
+        <span>Back To Modules</span>
+      </a>
+      <h2 class="page-header__title">2. Red Switch Transfer</h2>
+      <div class="page-header__right">
+        <button class="button--disabled">Save Updates</button>
+      </div>
+    </header>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <header role="header" class="page-header">
+    <a href="/scenario/index.html" class="page-header__back-link">
+      <%= inline_svg("icons/arrow-left-icon.svg") %>
+      <span>Back To Modules</span>
+    </a>
+    <h2 class="page-header__title">2. Red Switch Transfer</h2>
+    <div class="page-header__right">
+      <button class="button--disabled">Save Updates</button>
+    </div>
+  </header>
+<% end %><br/>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+// Link Variables
+// ========================================
+
+$links: (
+  'alpha': (
+    $blue-base
+  ),
+  'bravo': (
+    $purple-base
+  ),
+  'charlie': (
+    $red-base
+  ),
+  'delta': (
+    $grey-dark
+  ),
+  'disabled': (
+    $grey-light
+  )
+);

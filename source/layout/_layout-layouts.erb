@@ -1,0 +1,87 @@
+<div class="page-article__content-section" id="layouts">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Layouts</h2>
+      <p class="text--large">What runs the structural design of the application.</p>
+      <p class="text">There are a few different types of layouts inside of the Atomizer application. All follow a similar development and design structure, but each produce slightly different results.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <p class="highlight--alpha">Full Page Layout</p>
+    <div class="columns-4__s highlight--bravo" style="height: 100px">Page Content</div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Full Page Layout -->
+  <div class="page-main page-main--full">
+    <!-- Content -->
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <p class="highlight--alpha">Sidebar Right</p>
+    <div class="row">
+      <div class="columns-3__s highlight--bravo" style="height: 100px">Page Content</div>
+      <div class="columns-1__s highlight--bravo" style="height: 100px">Page Sidebar</div>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Content With Right Sidebar -->
+  <div class="page-main page-main--left">
+    <!-- Content -->
+  </div>
+  <!-- Sidebar Right -->
+  <aside role="complementary" class="page-sidebar page-sidebar--right">
+    <!-- Content -->
+  </aside>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <p class="highlight--alpha">Sidebar Right</p>
+    <div class="row">
+      <div class="columns-1__s highlight--bravo" style="height: 100px">Page Sidebar</div>
+      <div class="columns-3__s highlight--bravo" style="height: 100px">Page Content</div>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Sidebar Left -->
+  <aside role="complementary" class="page-sidebar page-sidebar--left">
+    <!-- Content -->
+  </aside>
+  <!-- Content With Left Sidebar -->
+  <div class="page-main page-main--right">
+    <!-- Content -->
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <p class="highlight--alpha">Sidebars Left and Right</p>
+    <div class="row">
+      <div class="columns-1__s highlight--bravo" style="height: 100px">Page Sidebar</div>
+      <div class="columns-2__s highlight--bravo" style="height: 100px">Page Content</div>
+      <div class="columns-1__s highlight--bravo" style="height: 100px">Page Sidebar</div>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Sidebar Left -->
+  <aside role="complementary" class="page-sidebar page-sidebar--small page-sidebar--left">
+    <!-- Content -->
+  </aside>
+  <!-- Content With Left + Right Sidebars -->
+  <div class="page-main page-main--middle">
+    <!-- Content -->
+  </div>
+  <!-- Sidebar Right -->
+  <div class="page-sidebar page-sidebar--right">
+    <!-- Content -->
+  </div>
+<% end %><br/>
+  </div>
+</div>

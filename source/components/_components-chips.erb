@@ -1,0 +1,85 @@
+<div class="page-article__content-section" id="chips">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">Chips</h2>
+      <p class="text--large">Crunch. Crunch. Crunch.</p>
+      <p class="text">A chip is made up of two things: an image and some content. They are fairly universal and can be used in many situations, but they must contain these two elements. The image sits on the left side of the chip and has a 100% border radius which gives it the circle look. The text sits on the right side of the chip. The text may be a description, combination of a name and date or title and subtitle. On smaller screens, the chip image is hidden to make room for the text.</p>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <ul class="list">
+      <li class="chip columns-3__m columns-4__l">
+        <div class="chip--left">
+          <div class="chip__image">
+            <%= image_tag 'misc/user-avatar-img.jpg' %>
+          </div>
+        </div>
+        <div class="chip--right">
+          <p class="chip__text"><strong>Kurt Cunningham</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        </div>
+      </li>
+      <li class="chip columns-3__m columns-4__l">
+        <div class="chip--left">
+          <div class="chip__image">
+            <span class="chip__image--none">JK</span>
+          </div>
+        </div>
+        <div class="chip--right">
+          <p class="chip__text"><strong>Joey Kirk</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Standard Chip -->
+  <li class="chip">
+    <div class="chip--left">
+      <div class="chip__image">
+        <img src="/images/misc/user-avatar-img.jpg">
+      </div>
+    </div>
+    <div class="chip--right">
+      <p class="chip__text"><strong>Kurt Cunningham</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+    </div>
+  </li>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a chip.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.chip</td>
+          <td class="table__body-item">This should be applied to the parent element. <% code("html") do %><div class="chip"> <!-- Chip Content --> </div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.chip--left</td>
+          <td class="table__body-item">This should be applied to the parent element of the chip that contains the chip image. <% code("html") do %><div class="chip--left"> <!-- Chip Content Right --> </div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.chip__image</td>
+          <td class="table__body-item">This should be applied to the element that wraps the chip image. It applies the border radius and overflow styles so the image is a nice circle. <% code("html") do %><div class="chip__image"> <%= image_tag 'misc/user-avatar-img.jpg' %> </div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.chip__image--none</td>
+          <td class="table__body-item">If the chip does not have an image or is just an icon, applie this to a span. <% code("html") do %><span class="chip__image--none"> <!-- Icon or a letter can be placed in here --> </span><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.chip--right</td>
+          <td class="table__body-item">This should be applied to the parent element of the chip that contains the content. <% code("html") do %><div class="chip--right"> <!-- Chip Content Right --> </div><% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">.chip__text</td>
+          <td class="table__body-item">Apply this class to the text inside the chip element. <% code("html") do %><p class="chip__text"><strong>Joey Kirk</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p><% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

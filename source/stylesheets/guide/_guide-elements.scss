@@ -1,0 +1,80 @@
+// Style Guide Elements View Styles
+// ========================================
+
+// Color Swatch
+.color-swatch {
+  @include omega(2n);
+  margin-bottom: $spacer-charlie;
+  text-align: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include media($medium) {
+    @include omega-reset(2n);
+    @include omega(3n);
+  }
+
+  @include media($large) {
+    @include omega-reset(3n);
+    @include omega(4n);
+  }
+
+  .color-swatch__icon {
+    display: block;
+    height: 100px;
+    margin-bottom: $spacer-delta;
+    width: 100%;
+  }
+
+  .title {
+    margin-bottom: $spacer-echo;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    @include s-golf;
+    color: $grey-dark;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+
+// Icons
+.icon {
+  @include omega(4n);
+  @include span-columns(1 of 4);
+  text-align: center;
+  margin: 0 auto;
+
+  @include media($large) {
+    @include omega-reset(2n);
+    @include omega(8n);
+    @include span-columns(1.5 of 12);
+  }
+
+  .icon__box {
+    @include position(relative);
+    background-color: $blue-base;
+    border-radius: 1px;
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    padding: $spacer-delta;
+    width: 60px;
+  }
+
+  .icon__image {
+    @include center(true, true);
+  }
+
+  .icon__title {
+    @include s-hotel;
+    color: $grey-dark;
+    font-weight: 600;
+    margin-top: $spacer-echo;
+    text-transform: uppercase;
+  }
+}

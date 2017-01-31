@@ -1,0 +1,26 @@
+// Link Component
+// ========================================
+
+
+// Variables
+$link-cursor-disabled:  not-allowed;
+
+
+// Structure
+%link {
+  @include font-type($primary-sans-serif, normal, 400);
+}
+
+@each $link, $styles in $links {
+  $color:   nth($styles, 1);
+
+  .link--#{$link} {
+    @extend %link;
+    color: $color;
+
+    // Disabled Button
+    @if $link == 'disabled' {
+      cursor: $link-cursor-disabled;
+    }
+  }
+}

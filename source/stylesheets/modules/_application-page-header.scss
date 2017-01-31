@@ -1,0 +1,124 @@
+// Application Page Header Module
+// ========================================
+
+// Variables
+$page-header-background:          $black-base;
+$page-header-cords:               105px null null null;
+$page-header-max-width:           1600px;
+$page-header-padding:             $spacer-charlie;
+$page-header-padding-0:           0;
+$page-header-position:            fixed;
+$page-header-width:               100%;
+$page-header-z-index:             10;
+
+$page-header-tabs-margin:         $spacer-charlie;
+
+$page-header-right-cords:         30px 30px null null;
+$page-header-right-position:      absolute;
+
+$page-header-title-color:         $white-base;
+$page-header-margin:              0;
+
+$page-header-link-display:        inline-block;
+$page-header-link-margin:         $spacer-echo;
+$page-header-link-transform:      uppercase;
+
+$page-header-stats-float:         left;
+$page-header-stats-margin:        $spacer-delta;
+
+$page-header-stat-align:          center;
+$page-header-stat-display:        inline-block;
+$page-header-stat-margin:         $spacer-delta;
+
+
+// Structure
+.page-header {
+  // NOTE: This has been commented out only for the stylguide
+  // @include position($page-header-position, $page-header-cords);
+  @include position(relative); // Remove for production
+  background-color: $page-header-background;
+  max-width: $page-header-max-width;
+  padding: $page-header-padding;
+  width: $page-header-width;
+  z-index: $page-header-z-index;
+
+  // Tab Adjustments
+  &.page-header--tabs {
+    padding-bottom: $page-header-padding-0;
+  }
+
+  // Add margin to tabs
+  .tabs {
+    margin-top: $page-header-tabs-margin;
+  }
+
+  // Remove tab default border
+    // Note: Might be worth removing border to begin with.
+  .tab__list {
+    border-bottom: none;
+  }
+
+}
+
+// Page Header Right
+.page-header__right {
+  @include position($page-header-right-position, $page-header-right-cords);
+}
+
+
+// Page Header Title
+.page-header__title {
+  color: $page-header-title-color;
+  margin: $page-header-margin;
+}
+
+
+// Page Header Back Link
+.page-header__back-link {
+  @extend .link--alpha;
+  @include s-golf;
+  display: $page-header-link-display;
+  margin-bottom: $page-header-link-margin;
+  text-transform: $page-header-link-transform;
+
+  span,
+  svg {
+    vertical-align: middle;
+  }
+
+  svg {
+    width: 10px;
+  }
+
+  #app-icon {
+    fill: $blue-base;
+  }
+}
+
+
+// Page Header Stats
+.page-header__stats {
+  float: $page-header-stats-float;
+  margin-right: $page-header-stats-margin;
+}
+
+.page-header__stat {
+  display: $page-header-stat-display;
+  margin-right: $page-header-stat-margin;
+  text-align: $page-header-stat-align;
+
+  .number,
+  .text {
+    color: $white-base;
+  }
+
+  .number {
+    @include s-bravo;
+    display: block;
+  }
+
+  .text {
+    @include s-hotel;
+    text-transform: uppercase;
+  }
+}

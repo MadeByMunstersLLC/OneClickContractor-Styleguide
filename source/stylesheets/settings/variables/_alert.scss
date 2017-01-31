@@ -1,0 +1,20 @@
+// Alert Variables
+// ========================================
+
+$alerts: (
+  'success': (
+    $green-base,
+    $green-light,
+    $black-base
+  ),
+  'caution': (
+    $yellow-base,
+    $yellow-light,
+    $black-base
+  ),
+  'warning': (
+    $red-base,
+    $red-light,
+    $black-base
+  )
+);

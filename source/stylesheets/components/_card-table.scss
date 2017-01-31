@@ -1,0 +1,138 @@
+// Card Table Component
+// ========================================
+
+
+// Variables
+$card-table-width:              100%;
+
+$card-table-icon-fill:          $grey-dark;
+
+$card-item-display:             inline-block;
+$card-item-v-align:             middle;
+
+$card-item-width-lg:            35%;
+
+$card-header-item-color:        $purple-base;
+$card-header-item-padding:      $spacer-charlie;
+$card-header-item-transform:    uppercase;
+
+$card-body-item-align:          left;
+$card-body-item-padding:        $spacer-delta;
+$card-body-item-transform:      capitalize;
+
+$card-body-item-spacer:         $spacer-echo;
+
+$card-favorite-margin:          0 $spacer-echo 0 0;
+
+$card-actions-width-md:         8%;
+$card-actions-width-lg:         6%;
+
+$card-action-width:             $spacer-delta;
+
+$card-action-link-display:      inline-block;
+$card-action-link-margin:       $spacer-echo;
+$card-action-link-white-space:  nowrap;
+
+$card-action-link-last-margin:  $spacer-echo;
+
+$card-action-icon-width:        $spacer-delta;
+
+
+// Structure
+.card-table {
+  width: $card-table-width;
+
+  // Remove Card Positioning
+  .card {
+    position: inherit;
+  }
+
+  #app-icon {
+    fill: $card-table-icon-fill;
+  }
+}
+
+
+// Card Table Header
+.card-table__header {
+
+  .card-item {
+    @extend .text--bold;
+    @include s-golf;
+    color: $card-header-item-color;
+    padding-bottom: $card-header-item-padding;
+    text-transform: $card-header-item-transform;
+  }
+}
+
+
+// Card Table Body
+.card-table__body {
+
+  .card-item:first-child {
+    padding-left: $card-body-item-padding;
+  }
+
+  .card-item:not(:last-child) {
+    padding-right: $card-body-item-padding;
+  }
+
+  .card {
+    display: table-row;
+  }
+
+  .spacer {
+    height: $card-body-item-spacer;
+  }
+}
+
+
+// Card Table Item
+.card-item {
+  padding: $card-body-item-padding 0;
+  text-align: $card-body-item-align;
+  text-transform: $card-body-item-transform;
+  vertical-align: $card-item-v-align;
+
+  &.card-item--large {
+    width: $card-item-width-lg;
+
+    .title {
+      @include ellipsis(80%);
+      margin-bottom: 0;
+    }
+
+    .card__favorite-action svg {
+      margin: $card-favorite-margin;
+      width: $card-action-width;
+    }
+  }
+}
+
+
+// Card Table Item Actions
+.card-item__actions {
+  padding: $card-body-item-padding $card-body-item-padding 0 0;
+
+  @include media($large) {
+    width: $card-actions-width-md;
+  }
+
+  @include media($extra-large) {
+    width: $card-actions-width-lg;
+  }
+
+  .link {
+    display: $card-action-link-display;
+    margin-top: $card-action-link-margin;
+    white-space: $card-action-link-white-space;
+
+    &:not(:last-child) {
+      margin-right: $card-action-link-last-margin;
+    }
+
+    svg {
+      width: $card-action-icon-width;
+    }
+  }
+}

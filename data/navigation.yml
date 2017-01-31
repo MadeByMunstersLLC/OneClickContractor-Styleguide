@@ -1,0 +1,85 @@
+site_navigation:
+  - section_title: Design Elements
+    section_url: elements
+    sections:
+      - section_title: Colors
+        section_link: 'elements/#colors'
+        section_page_link: '#colors'
+      - section_title: Typography
+        section_link: 'elements/#typography'
+        section_page_link: '#typography'
+      - section_title: Iconography
+        section_link: 'elements/#icons'
+        section_page_link: '#icons'
+  - section_title: Design Components
+    section_url: components
+    sections:
+      - section_title: Alerts
+        section_link: 'components/#alerts'
+        section_page_link: '#alerts'
+      - section_title: Badges
+        section_link: 'components/#badges'
+        section_page_link: '#badges'
+      - section_title: Buttons
+        section_link: 'components/#buttons'
+        section_page_link: '#buttons'
+      - section_title: Cards
+        section_link: 'components/#cards'
+        section_page_link: '#cards'
+      - section_title: Chips
+        section_link: 'components/#chips'
+        section_page_link: '#chips'
+      - section_title: Form Elements
+        section_link: 'components/#form-elements'
+        section_page_link: '#form-elements'
+      - section_title: Highlights
+        section_link: 'components/#highlights'
+        section_page_link: '#highlights'
+      - section_title: Links
+        section_link: 'components/#links'
+        section_page_link: '#links'
+      - section_title: Loading Indicator
+        section_link: 'components/#loading'
+        section_page_link: '#loading'
+      - section_title: Modals
+        section_link: 'components/#modals'
+        section_page_link: '#modals'
+      - section_title: Popouts
+        section_link: 'components/#popout'
+        section_page_link: '#popout'
+      - section_title: Tables
+        section_link: 'components/#tables'
+        section_page_link: '#tables'
+      - section_title: Tabs
+        section_link: 'components/#tabs'
+        section_page_link: '#tabs'
+      - section_title: Toggle
+        section_link: 'components/#toggle'
+        section_page_link: '#toggle'
+      - section_title: Tooltips
+        section_link: 'components/#tooltips'
+        section_page_link: '#tooltips'
+  - section_title: Design Modules
+    section_url: modules
+    sections:
+      - section_title: Topbar
+        section_link: 'modules/#topbar'
+        section_page_link: '#topbar'
+      - section_title: Page Header
+        section_link: 'modules/#page-header-main'
+        section_page_link: '#page-header-main'
+      - section_title: Page Header Tabs
+        section_link: 'modules/#page-header-tabs'
+        section_page_link: '#page-header-tabs'
+  - section_title: Design Layout
+    section_url: layout
+    sections:
+      - section_title: Grid
+        section_link: 'layout/#grid'
+        section_page_link: '#grid'
+      - section_title: Grid Offsets
+        section_link: 'layout/#offsets'
+        section_page_link: '#offsets'
+      - section_title: Layouts
+        section_link: 'layout/#layouts'
+        section_page_link: '#layouts'

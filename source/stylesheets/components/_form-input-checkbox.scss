@@ -1,0 +1,73 @@
+// Form Input Checkbox Component
+// ========================================
+
+// Variables
+$checkbox-background:                   $white-base;
+$checkbox-border:                       2px solid $grey-base;
+$checkbox-border-radius:                1px;
+$checkbox-cursor:                       pointer;
+$checkbox-dimensions:                   17px;
+$checkbox-display:                      inline-block;
+$checkbox-margin:                       0 5px 0 0;
+$checkbox-padding:                      0;
+$checkbox-position:                     relative;
+$checkbox-transition:                   all 0.2s ease-in;
+$checkbox-v-align:                      bottom;
+
+$checkbox-checked-background:           $blue-base;
+$checkbox-checked-border:               2px solid $blue-base;
+
+$checkbox-background-disabled:          $white-dark;
+$checkbox-background-disabled-checked:  $white-dark;
+$checkbox-border-disabled:              $grey-base;
+
+
+// Structure
+input[type="checkbox"],
+input[type="checkbox"]:focus {
+  @include appearance(none);
+  @include position($checkbox-position);
+  @include transition();
+  background-color: $checkbox-background;
+  border: $checkbox-border;
+  border-radius: $checkbox-border-radius;
+  display: $checkbox-display;
+  height: $checkbox-dimensions;
+  margin: $checkbox-margin;
+  outline: none;
+  padding: $checkbox-padding;
+  vertical-align: $checkbox-v-align;
+  width: $checkbox-dimensions;
+  -webkit-appearance: none;
+
+  &:hover{ cursor: $checkbox-cursor; }
+}
+
+input[type="checkbox"]:checked {
+  background-color: $checkbox-checked-background;
+  border: $checkbox-checked-border;
+
+  &:after{
+    @include position(absolute, 0 0 null 0);
+    @include transition($checkbox-transition);
+    background: image-url('icons/checkmark-icon.svg') no-repeat center center;
+    background-size: 10px;
+    content: '';
+    height: 100%;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.checkbox--label {
+  @include position(relative);
+
+  &.checkbox--label__small {
+    @include position(relative);
+    @include s-foxtrot;
+  }
+
+  span {
+    @include position(absolute, 2px null null null);
+  }
+}

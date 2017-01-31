@@ -1,0 +1,39 @@
+// Guide Homepage
+// ========================================
+
+.homepage-section__lead {
+
+  img {
+    display: block;
+    margin: -150px auto 0;
+    width: 90%;
+  }
+}
+
+.homepage-section {
+  padding: 0 15px;
+
+  @include media($medium) {
+    padding: 0;
+  }
+}
+
+.homepage-section__nav {
+  display: none;
+
+  @include media($medium) {
+    display: block;
+  }
+}
+
+// Guide Footer
+.guide__footer {
+  background: $white-dark;
+  margin-top: 60px;
+  padding: 60px 0;
+  text-align: center;
+
+  label {
+    margin: 0;
+  }
+}

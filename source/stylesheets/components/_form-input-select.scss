@@ -1,0 +1,29 @@
+// Form Input Select Component
+// ========================================
+
+// Variables
+$select-background-position:         100%;
+$select-background-url:              'icons/form-select-icon.svg';
+$select-padding:                     $spacer-delta + 5px;
+
+$select-background-inactive:         $white-dark;
+$select-border-inactive:             1px solid $grey-light;
+$select-background-inactive-url:     'icons/form-select-disabled-icon.svg';
+
+
+// Structure
+select{
+  @include font-type($primary-sans-serif, normal, 400);
+  background-image: image-url($select-background-url);
+  background-position: $select-background-position;
+  background-repeat: no-repeat;
+  padding-right: $select-padding !important; // NOTE: Forcing additional padding on the right so icon is not overlapped
+
+  &:disabled {
+    background-color: $select-background-inactive;
+    background-image: image-url($select-background-inactive-url);
+    border: $select-border-inactive;
+    color: $grey-dark;
+    cursor: not-allowed;
+  }
+}

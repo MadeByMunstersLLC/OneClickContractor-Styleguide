@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Atomizer Style Guide | Red Ventures</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1 user-scalable=no">
+
+    <!-- Favicons -->
+    <%= favicon_tag 'images/favicon.png' %>
+
+    <!-- Stylesheets -->
+    <%= stylesheet_link_tag "application", "syntax" %>
+
+    <!-- Fonts -->
+    <script src="https://use.typekit.net/gzo3ihf.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  </head>
+  <body class="<%= page_classes %>">
+    <%= partial 'layouts/shared/_guide-navigation' %>
+    <main role="main" class="page">
+      <%= partial 'layouts/shared/_guide-page-header' %>
+      <%= yield %>
+    </main>
+    <%= partial 'layouts/shared/_guide-footer' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <%= javascript_include_tag  "application" %>
+    <script>
+      $(".page-article__aside").stick_in_parent({
+        sticky_class: 'is-fixed'
+      });
+    </script>
+  </body>
+</html>

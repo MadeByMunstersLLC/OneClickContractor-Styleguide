@@ -1,0 +1,52 @@
+// Typography Mixin
+// ========================================
+
+
+// Font Sizes
+@mixin s-alpha{
+  font-size: $s-alpha;
+}
+
+@mixin s-bravo{
+  font-size: $s-bravo;
+}
+
+@mixin s-charlie{
+  font-size: $s-charlie;
+}
+
+@mixin s-delta{
+  font-size: $s-delta;
+}
+
+@mixin s-echo{
+  font-size: $s-echo;
+}
+
+@mixin s-foxtrot{
+  font-size: $s-foxtrot;
+}
+
+@mixin s-golf{
+  font-size: $s-golf;
+}
+
+@mixin s-hotel{
+  font-size: $s-hotel;
+}
+
+
+// Font Styles
+@mixin font-type($type, $style, $weight){
+  font-family: $type;
+  font-style:  $style;
+  font-weight: $weight;
+}
+
+// Text Shadow
+@mixin text-shadow($dim: 0 0 0 0, $color: $black-base){
+  -webkit-text-shadow: $dim $color;
+  -moz-text-shadow:    $dim $color;
+  -o-text-shadow:      $dim $color;
+  text-shadow:         $dim $color;
+}
