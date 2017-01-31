@@ -2,52 +2,52 @@
 // ========================================
 
   // Black
-  $black-base:    #303743;
-  $black-dark:    #262A30;
+  $black-light:   #445257;
+  $black-base:    #17283D;
 
   // Blue
-  $blue-base:     #2791C6;
+  $blue-base:     #4FBDF4;
 
   // Green
-  $green-light:   #D0EDE5;
-  $green-base:    #42B996;
+  $green-base:    #7ACC5A;
 
   // Grey
-  $grey-light:    #DEDFE1;
-  $grey-base:     #BDC2CA;
-  $grey-dark:     #91969D;
+  $grey-light:    #EFEFEF;
+  $grey-base:     #BFBFBF;
+  $grey-dark:     #9EA1A6;
+
+  // Orange
+  $orange-base:   #FE7328;
 
   // Purple
-  $purple-base:   #434358;
+  $purple-base:   #7460EE;
 
   // Red
-  $red-light:     #F9D7D3;
-  $red-base:      #E6614F;
+  $red-base:      #FF5F5D;
 
   // White
   $white-base:    #FFFFFF;
-  $white-dark:    #FAFAFA;
+  $white-light:   #FAFAFA;
+  $white-dark:    #F8F8F9;
 
   // Yellow
-  $yellow-light:  #FDF0D3;
-  $yellow-base:   #FBCF6E;
+  $yellow-base:   #FFC539;
 
 
   //MAIN PALETTE LIST
   $colors: (
+    black-light:  $black-light,
     black-base:   $black-base,
-    black-dark:   $black-dark,
     blue-base:    $blue-base,
     green-base:   $green-base,
-    green-light:  $green-light,
     grey-light:   $grey-light,
     grey-base:    $grey-base,
     grey-dark:    $grey-dark,
+    orange-base:  $orange-base,
     purple-base:  $purple-base,
-    red-light:    $red-light,
     red-base:     $red-base,
     white-base:   $white-base,
+    white-light:  $white-light,
     white-dark:   $white-dark,
-    yellow-light: $yellow-light,
     yellow-base:  $yellow-base
   );

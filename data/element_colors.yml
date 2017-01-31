@@ -1,28 +1,43 @@
 colors:
+  - title: Light Black
+    value: '#445257'
+    color: 'light-base'
+  - title: Base Black
+    value: '#17283D'
+    color: 'black-base'
+  - title: Base Blue
+    value: '#4FBDF4'
+    color: 'blue-base'
+  - title: Base Green
+    value: '#7ACC5A'
+    color: 'green-base'
   - title: Light Grey
-    value: '#FAFAFA'
+    value: '#EFEFEF'
     color: 'grey-light'
   - title: Base Grey
-    value: '#DEDFE1'
+    value: '#BFBFBF'
     color: 'grey-base'
   - title: Dark Grey
-    value: '#91969D'
+    value: '#9EA1A6'
     color: 'grey-dark'
-  - title: Base Black
-    value: '#303743'
-    color: 'black-base'
+  - title: Base Orange
+    value: '#FE7328'
+    color: 'orange-base'
   - title: Base Purple
-    value: '#434358'
+    value: '#7460EE'
     color: 'purple-base'
-  - title: Base Yellow
-    value: '#FBCF6E'
-    color: 'yellow-base'
   - title: Base Red
-    value: '#E6614F'
+    value: '#FF5F5D'
     color: 'red-base'
-  - title: Base Green
-    value: '#42B996'
-    color: 'green-base'
-  - title: Base Blue
-    value: '#2791C6'
-    color: 'blue-base'
+  - title: Base White
+    value: '#FFFFFF'
+    color: 'white-base'
+  - title: Light White
+    value: '#FAFAFA'
+    color: 'white-light'
+  - title: Dark White
+    value: '#F8F8F9'
+    color: 'white-dark'
+  - title: Base Yellow
+    value: '#FFC539'
+    color: 'yellow-base'

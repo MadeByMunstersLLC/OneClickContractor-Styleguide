@@ -53,9 +53,6 @@ site_navigation:
       - section_title: Tabs
         section_link: 'components/#tabs'
         section_page_link: '#tabs'
-      - section_title: Toggle
-        section_link: 'components/#toggle'
-        section_page_link: '#toggle'
       - section_title: Tooltips
         section_link: 'components/#tooltips'
         section_page_link: '#tooltips'
