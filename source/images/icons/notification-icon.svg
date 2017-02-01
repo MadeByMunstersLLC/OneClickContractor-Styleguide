@@ -5,10 +5,14 @@
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="input/search/placeholder" transform="translate(-10.000000, -6.000000)">
-            <g id="search-icon" transform="translate(10.000000, 6.000000)">
-                <g id="Group">
-                    <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+        <g id="header/navigation-authenticated" transform="translate(-1217.000000, -20.000000)">
+            <g id="nav">
+                <g id="nav-right" transform="translate(1021.000000, 10.000000)">
+                    <g id="nofitication-icon" transform="translate(196.000000, 10.000000)">
+                        <g id="Group">
+                            <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+                        </g>
+                    </g>
                 </g>
             </g>
         </g>

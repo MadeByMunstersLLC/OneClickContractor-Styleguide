@@ -4,17 +4,17 @@
 $alerts: (
   'success': (
     $green-base,
-//    $green-light,
-    $black-base
+    $green-base, 
+    $white-base
   ),
   'caution': (
     $yellow-base,
-//    $yellow-light,
-    $black-base
+    $yellow-base, 
+    $white-base
   ),
   'warning': (
     $red-base,
-//    $red-light,
-    $black-base
+    $red-base, 
+    $white-base
   )
 );

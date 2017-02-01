@@ -24,7 +24,6 @@ $alert-close-transition:   0.5s opacity ease;
   @include box-shadow($alert-spread, $alert-shadow);
   @include position($alert-position);
   @include transition(opacity 0.5s ease);
-  border: $alet-border;
   border-radius: $alert-radius;
   opacity: $alert-opacity;
   padding: $alet-padding;
