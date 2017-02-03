@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customer---Presenations" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ProposalPresentationsDefault_Desktop_1A_OCC" transform="translate(-1198.000000, -116.000000)" fill="#BFBFBF">
+            <g id="Body" transform="translate(343.000000, 100.000000)">
+                <g id="section">
+                    <g id="header">
+                        <g id="header-right" transform="translate(543.000000, 0.000000)">
+                            <g id="toggle-list-view" transform="translate(260.000000, 0.000000)">
+                                <g id="list-icon" transform="translate(49.000000, 9.000000)">
+                                    <g id="Group">
+                                        <path d="M3,13 L5,13 L5,11 L3,11 L3,13 Z M3,17 L5,17 L5,15 L3,15 L3,17 Z M3,9 L5,9 L5,7 L3,7 L3,9 Z M7,13 L21,13 L21,11 L7,11 L7,13 Z M7,17 L21,17 L21,15 L7,15 L7,17 Z M7,7 L7,9 L21,9 L21,7 L7,7 Z" id="Shape"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

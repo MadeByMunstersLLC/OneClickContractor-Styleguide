@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customer---Documents" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ProposalDocumentsMain_Desktop_1A_OCC" transform="translate(-364.000000, -233.000000)" fill="#7ACC5A">
+            <g id="Body" transform="translate(343.000000, 100.000000)">
+                <g id="section">
+                    <g id="table" transform="translate(1.000000, 80.000000)">
+                        <g id="tbody" transform="translate(0.000000, 33.000000)">
+                            <g id="tr">
+                                <g id="file-excel" transform="translate(20.000000, 20.000000)">
+                                    <path d="M2,0 L10,0 L16,6 L16,18 C16,19.1045695 15.1045695,20 14,20 L2,20 C0.8954305,20 0,19.1045695 0,18 L0,2 C0,0.8954305 0.8954305,0 2,0 L2,0 Z M9,1.5 L9,7 L14.5,7 L9,1.5 L9,1.5 Z M13,9 L9,9 L9,11 L10,11 L8,12.67 L6,11 L7,11 L7,9 L3,9 L3,11 L4,11 L7,13.5 L4,16 L3,16 L3,18 L7,18 L7,16 L6,16 L8,14.33 L10,16 L9,16 L9,18 L13,18 L13,16 L12,16 L9,13.5 L12,11 L13,11 L13,9 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customer---Details" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ProposalScreenShare_Desktop_1A_OCC" transform="translate(-478.000000, -181.000000)" fill="#9EA1A6">
+            <g id="Modal">
+                <g id="modal-body" transform="translate(450.000000, 120.000000)">
+                    <g id="modal-body-content" transform="translate(20.000000, 49.000000)">
+                        <g id="icon">
+                            <path d="M28,26 C29.1,26 29.99,25.1 29.99,24 L30,14 C30,12.89 29.1,12 28,12 L12,12 C10.89,12 10,12.89 10,14 L10,24 C10,25.1 10.89,26 12,26 L8,26 L8,28 L32,28 L32,26 L28,26 Z M21,22.47 L21,20.28 C18.22,20.28 16.39,21.13 15,23 C15.56,20.33 17.11,17.67 21,17.13 L21,15 L25,18.73 L21,22.47 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
