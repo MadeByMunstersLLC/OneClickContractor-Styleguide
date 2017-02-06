@@ -52,7 +52,7 @@ icons:
   - title: Search
     src: icons/search-icon.svg
   - title: Select
-    src: icons/arrow-select-icon.svg
+    src: icons/select-icon.svg
   - title: Settings
     src: icons/settings-icon.svg
   - title: Star 1

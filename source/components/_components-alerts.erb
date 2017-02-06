@@ -9,7 +9,6 @@
   <div class="content-section__row">
     <% data.components_alerts.alerts.each do |a| %>
       <figure aria-hidden="true" class="alert--<%= a.type %> toggle-parent">
-        <%= inline_svg("icons/notification-icon.svg", class: "alert__icon") %>
         <h5 class="alert__text"><%= a.text %></h5>
         <% link_to '#', class: 'alert__trigger' do %>
           <%= inline_svg("icons/close-icon.svg", class: "alert__icon alert__icon--close toggle-element") %>
@@ -20,14 +19,14 @@
   <div class="content-section__row">
     <h4 class="content-section__label">Sample Code</h4>
 <% code("html") do %>
-  <figure aria-hidden="true" class="alert--success">
+  <figure aria-hidden="true" class="alert--alpha">
     <svg width="16" height="20" viewBox="0 0 16 20" xmlns="http://www.w3.org/2000/svg" class="alert__icon"><title>notification-icon</title>
       <path d="M12 14H4V8c0-2.666 2-4 4-4s4 1.334 4 4v6zm-3 3c0 .552-.448 1-1 1s-1-.448-1-1v-1h2v1zm5-3V8c0-3.553-2.368-5.525-5-5.92V0H7v2.08C4.368 2.474 2 4.446 2 8v6H0v2h5v1c0 1.657 1.343 3 3 3s3-1.343 3-3v-1h5v-2h-2z" fill="#FFFFFF" fill-rule="evenodd" id="app-icon"></path>
     </svg>
     <h5 class="alert__text">High fives! You have successfully updated the module.</h5>
     <a class="alert__trigger" href="#">
       <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="alert__icon alert__icon--close"><title>close-icon</title>
-        <path d="M11.446 10L20 18.554 18.553 20 10 11.446 1.446 20 0 18.554 8.553 10 0 1.446 1.446 0 10 8.554 18.553 0 20 1.446" fill="#FFFFFF" fill-rule="evenodd" id="app-icon"></path>
+        <path d="M11.446 10L20 18.554 18.553 20 10 11.446 1.446 20 0 18.554 8.553 10 0 1.446 1.446 0 10 8.554 18.553 0 20 1.446" fill="#60A246" fill-rule="evenodd" id="app-icon"></path>
       </svg>
     </a>
   </figure>
@@ -44,7 +43,7 @@
       <tbody class="table__body">
         <tr>
           <td class="table__body-item" style="width:30%">.alert--[type]</td>
-          <td class="table__body-item">This should be applied to the element you are styling to look like an alert. It provides the correct styles for the message being returned. The class name should change based on the type of alert being displayed. <% code("html") do %><figure class="alert--success"></figure><% end %></td>
+          <td class="table__body-item">This should be applied to the element you are styling to look like an alert. It provides the correct styles for the message being returned. The class name should change based on the type of alert being displayed. <% code("html") do %><figure class="alert--alpha"></figure><% end %></td>
         </tr>
         <tr>
           <td class="table__body-item" style="width:30%">[aria-hidden="true"]</td>

@@ -2,19 +2,24 @@
 // ========================================
 
 $alerts: (
-  'success': (
+  'alpha': (
     $green-base,
     $green-base, 
     $white-base
   ),
-  'caution': (
+  'bravo': (
     $yellow-base,
     $yellow-base, 
     $white-base
   ),
-  'warning': (
+  'charlie': (
     $red-base,
     $red-base, 
+    $white-base
+  ),
+  'delta': (
+    $blue-base,
+    $blue-base, 
     $white-base
   )
 );

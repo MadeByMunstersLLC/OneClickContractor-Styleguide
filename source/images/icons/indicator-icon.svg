@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="15px" height="15px" viewBox="0 0 15 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>indicator</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customers" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DashboardMainSearch2_Desktop_1A_OCC" transform="translate(-40.000000, -205.000000)" fill="#FE7328">
+            <g id="Header" transform="translate(-1.000000, 0.000000)">
+                <g id="search-results" transform="translate(0.000000, 107.000000)">
+                    <g id="table" transform="translate(0.000000, 40.000000)">
+                        <g id="tbody" transform="translate(0.000000, 53.000000)">
+                            <g id="tr">
+                                <g id="td" transform="translate(41.000000, 0.000000)">
+                                    <circle id="indicator" cx="7.5" cy="12.5" r="7.5"></circle>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
