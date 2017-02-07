@@ -143,13 +143,25 @@
   <div class="content-section__row">
     <label class="form__label input--error">Form Label</label>
     <input type="text" placeholder="Placeholder text here" class="input--error" />
+    <select class="input--error">
+      <option>Select Option One</option>
+      <option>Select Option Two</option>
+      <option>Select Option Three</option>
+    </select>
+ 
   </div>
   <div class="content-section__row">
     <h4 class="content-section__label">Sample Code</h4>
 <% code("html") do %>
   <!-- Form Label / Input With Error -->
   <label class="form__label input--error">Form Label</label>
-  <input type="text" placeholder="Placeholder text here" class="input--error" />
+    <input type="text" placeholder="Placeholder text here" class="input--error" />
+  <!-- Input Select With Error -->
+  <select class="input--error">
+    <option>Select Option One</option>
+    <option>Select Option Two</option>
+    <option>Select Option Three</option>
+  </select>
 <% end %><br/>
   </div>
   <div class="content-section__row">
@@ -167,6 +179,10 @@
         </tr>
         <tr>
           <td class="table__body-item" style="width:30%">input.input--error</td>
+          <td class="table__body-item">Place this class on the input that contains the error. <% code("html") do %> <input type="text" placeholder="Placeholder text here" class="input--error" /> <% end %></td>
+        </tr>
+        <tr>
+          <td class="table__body-item" style="width:30%">select.input--error</td>
           <td class="table__body-item">Place this class on the input that contains the error. <% code("html") do %> <input type="text" placeholder="Placeholder text here" class="input--error" /> <% end %></td>
         </tr>
       </tbody>

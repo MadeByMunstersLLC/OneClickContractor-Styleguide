@@ -2,13 +2,14 @@
 // ========================================
 
 // Variables
-$select-background-position:         100%;
-$select-background-url:              'icons/form-select-icon.svg';
+$select-background-position:         98%;
+$select-background-url:              'icons/arrow-down-icon.svg';
 $select-padding:                     $spacer-delta + 5px;
 
 $select-background-inactive:         $white-dark;
 $select-border-inactive:             1px solid $grey-light;
 $select-background-inactive-url:     'icons/form-select-disabled-icon.svg';
+$select-error-background:            $red-base;
 
 
 // Structure
@@ -27,3 +28,10 @@ select{
     cursor: not-allowed;
   }
 }
+
+select.input--error {
+  border-color: $form-input-error-background;
+    color: $black-base;
+    font-style: normal;
+  }
+

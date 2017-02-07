@@ -1,20 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Customer---Notes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="ProposalNotesMain_Desktop_1A_OCC" transform="translate(-261.000000, -32.000000)" fill="#FFFFFF">
-            <g id="Aside" transform="translate(-1.000000, 0.000000)">
-                <g id="header" transform="translate(21.000000, 21.000000)">
-                    <g id="close-icon" transform="translate(236.000000, 6.000000)">
-                        <g id="Group">
-                            <polygon id="Shape" points="19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12"></polygon>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="14px" height="14px" viewBox="0 0 14 14" style="enable-background:new 0 0 14 14;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BFBFBF;}
+</style>
+<title>Shape</title>
+<desc>Created with Sketch.</desc>
+<g id="Customer---Notes">
+	<g id="ProposalNotesMain_Desktop_1A_OCC" transform="translate(-261.000000, -32.000000)">
+		<g id="Aside" transform="translate(-1.000000, 0.000000)">
+			<g id="header" transform="translate(21.000000, 21.000000)">
+				<g id="close-icon" transform="translate(236.000000, 6.000000)">
+					<g id="Group">
+						<polygon id="Shape" class="st0" points="19,6.4 17.6,5 12,10.6 6.4,5 5,6.4 10.6,12 5,17.6 6.4,19 12,13.4 17.6,19 19,17.6 
+							13.4,12 						"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>

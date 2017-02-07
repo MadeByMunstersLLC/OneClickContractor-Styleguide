@@ -12,6 +12,7 @@ $alert-radius:             1px;
 $alert-spread:             0 0 15px;
 $alert-shadow:             rgba(35,35,35,0.20);
 $alert-v-align:            middle;
+$alert-text-align:         center;
 
 $alert-close-float:        right;
 $alert-close-margin:       3px;
@@ -27,6 +28,7 @@ $alert-close-transition:   0.5s opacity ease;
   border-radius: $alert-radius;
   opacity: $alert-opacity;
   padding: $alet-padding;
+  text-align: $alert-text-align; 
 }
 
 

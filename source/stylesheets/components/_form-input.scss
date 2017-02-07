@@ -106,7 +106,7 @@ textarea {
 // Search Input
 input[type="search"],
 .input--search {
-  background-image: image-url('icons/search-input-icon.svg');
+  background-image: image-url('icons/search-icon.svg');
   background-position: 10px;
   background-repeat: no-repeat;
   background-size: $spacer-delta;
@@ -140,7 +140,7 @@ input.input--error {
   }
 
   @include placeholder {
-    color: $form-input-error-background;
-    font-style: italic;
+    color: $black-base;
+    font-style: normal;
   }
 }

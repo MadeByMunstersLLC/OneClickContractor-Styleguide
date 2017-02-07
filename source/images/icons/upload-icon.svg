@@ -1,26 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="17px" viewBox="0 0 14 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
-    <title>Shape</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Customer---Photos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="ProposalPhotosAdd1_Desktop_1A_OCC" transform="translate(-484.000000, -180.000000)" fill="#9EA1A6">
-            <g id="Modal">
-                <g id="modal-body" transform="translate(451.000000, 120.000000)">
-                    <g id="modal-body-content" transform="translate(20.000000, 49.000000)">
-                        <g id="header">
-                            <g id="icon">
-                                <g id="upload-icon" transform="translate(8.000000, 8.000000)">
-                                    <g id="Group">
-                                        <path d="M9,16 L15,16 L15,10 L19,10 L12,3 L5,10 L9,10 L9,16 Z M5,18 L19,18 L19,20 L5,20 L5,18 Z" id="Shape"></path>
-                                    </g>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="14px" height="17px" viewBox="0 0 14 17" style="enable-background:new 0 0 14 17;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BFBFBF;}
+</style>
+<title>Shape</title>
+<desc>Created with Sketch.</desc>
+<g id="Customer---Photos">
+	<g id="ProposalPhotosAdd1_Desktop_1A_OCC" transform="translate(-484.000000, -180.000000)">
+		<g id="Modal">
+			<g id="modal-body" transform="translate(451.000000, 120.000000)">
+				<g id="modal-body-content" transform="translate(20.000000, 49.000000)">
+					<g id="header">
+						<g id="icon">
+							<g id="upload-icon" transform="translate(8.000000, 8.000000)">
+								<g id="Group">
+									<path id="Shape" class="st0" d="M9,16h6v-6h4l-7-7l-7,7h4V16z M5,18h14v2H5V18z"/>
+								</g>
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
 </svg>
