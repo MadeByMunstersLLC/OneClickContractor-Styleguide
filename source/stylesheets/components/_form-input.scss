@@ -30,6 +30,7 @@ $form-input-add-on-float:        left;
 $form-add-on-input-width:        auto;
 
 $form-input-error-background:    $red-base;
+$form-input-success-background:  $green-base;
 
 
 // Structure
@@ -113,6 +114,16 @@ input[type="search"],
   padding-left: $spacer-charlie !important;
 }
 
+// Date Input
+input[type="date"],
+.input--date {
+  background-image: image-url('icons/date-icon.svg');
+  background-position: 10px;
+  background-repeat: no-repeat;
+  background-size: $spacer-delta;
+  padding-left: $spacer-charlie !important;
+}
+
 
 // NOTE: Only use on form inputs with attached butons
 .button--add-on__container--full {
@@ -140,7 +151,21 @@ input.input--error {
   }
 
   @include placeholder {
-    color: $black-base;
-    font-style: normal;
+    color: $form-input-color-placeholder;
+    font-style: italic;
+  }
+}
+
+input.input--success {
+  border-color: $form-input-success-background;
+  background-color: lighten($form-input-error-background, 35%);
+
+  &:hover {
+    border-color: $form-input-success-background;
+  }
+
+  @include placeholder {
+    color: $form-input-color-placeholder;
+    font-style: italic;
   }
 }

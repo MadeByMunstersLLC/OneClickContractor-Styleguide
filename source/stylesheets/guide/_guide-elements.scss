@@ -57,7 +57,7 @@
 
   .icon__box {
     @include position(relative);
-    background-color: rgba($blue-base, .1);
+    background-color: $blue-base;
     border-radius: 1px;
     display: block;
     height: 60px;
