@@ -7,9 +7,11 @@
 
   // Blue
   $blue-base:     #4FBDF4;
+  $blue-dark:     #288EC0;
 
   // Green
   $green-base:    #7ACC5A;
+  $green-dark:    #677760;
 
   // Grey
   $grey-light:    #EFEFEF;
@@ -24,6 +26,7 @@
 
   // Red
   $red-base:      #FF5F5D;
+  $red-dark:      #C2312F;
 
   // White
   $white-base:    #FFFFFF;
@@ -32,6 +35,7 @@
 
   // Yellow
   $yellow-base:   #FFC539;
+  $yellow-dark:   #C98E00;
 
 
   //MAIN PALETTE LIST
@@ -39,15 +43,19 @@
     black-light:  $black-light,
     black-base:   $black-base,
     blue-base:    $blue-base,
+    blue-dark:    $blue-dark,
     green-base:   $green-base,
+    green-dark:   $green-dark,
     grey-light:   $grey-light,
     grey-base:    $grey-base,
     grey-dark:    $grey-dark,
     orange-base:  $orange-base,
     purple-base:  $purple-base,
     red-base:     $red-base,
+    red-dark:     $red-dark,
     white-base:   $white-base,
     white-light:  $white-light,
     white-dark:   $white-dark,
-    yellow-base:  $yellow-base
+    yellow-base:  $yellow-base,
+    yellow-dark:  $yellow-dark
   );

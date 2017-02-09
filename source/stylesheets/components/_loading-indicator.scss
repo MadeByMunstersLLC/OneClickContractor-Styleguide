@@ -3,13 +3,15 @@
 
 // Variables
 $loading-indicator-margin:           ($spacer-alpha * 2) auto $spacer-alpha;
-$loading-indicator-width:            70px;
+$loading-indicator-width:            100px;
 $loading-indicator-text-align:       center;
 
 $loading-indicator-item-bg:          $grey-base;
 $loading-indicator-item-dimensions:  10px;
 
+$loading-indicator-active:           $blue-base;
 $loading-indicator-label-color:      $grey-base;
+
 
 
 // Structure
@@ -42,6 +44,8 @@ $loading-indicator-label-color:      $grey-base;
 
 // Loading Indicator
 @include keyframes(sk-bouncedelay) {
-  0%, 80%, 100% { @include transform(scale(0)); }
-  40% { @include transform(scale(1)); }
+  0%, 80%, 100% { @include transform(scale(1)); }
+  40% { @include transform(scale(1));
+        background-color: $blue-base;
+        height: 30px;}
 }

@@ -18,16 +18,9 @@ h1,
 h2,
 h3,
 h4,
+h5,
 h6 {
   color: $black-base;
-  line-height: 1.0;
-  margin-bottom: $spacer-delta;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-}
-
-h5 {
-  color: $white-base;
   line-height: 1.0;
   margin-bottom: $spacer-delta;
   text-rendering: optimizeLegibility;
