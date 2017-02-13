@@ -19,7 +19,7 @@ $modal-overlay-z-index:         9999;
 $modal-body-background:         $white-base;
 $modal-body-box-spread:         0 0 15px;
 $modal-body-box-color:          rgba(48, 55, 67, 1);
-$modal-border-radius:           0;
+$modal-border-radius:           5px;
 $modal-body-height:             auto;
 $modal-body-margin:             ($spacer-alpha * 2) auto;
 $modal-body-opacity:            0;
@@ -28,7 +28,7 @@ $modal-body-position:           relative;
 $modal-body-width:              500px;
 $modal-body-z-index:            99999;
 
-$modal-close-cords:             -31px -31px null null;
+$modal-close-cords:             25px 25px null null;
 $modal-close-display:           block;
 $modal-close-position:          absolute;
 $modal-close-size:              30px;
@@ -38,6 +38,13 @@ $modal-close-z-index:           9999;
 $modal-close-icon-cords:        7px null null 7px;
 $modal-close-icon-position:     relative;
 $modal-close-icon-width:        15px;
+
+$modal-icon-cords:              null null 10px 10px;
+$modal-icon-position:           relative;
+
+$modal-icon-background-color:   $white-dark;
+$modal-icon-background-radius:  3em;
+$modal-icon-background-width:   40px;
 
 
 
@@ -107,6 +114,17 @@ $modal-close-icon-width:        15px;
   }
 }
 
+.modal__icon-background {
+  width: $modal-icon-background-width;
+  height: $modal-icon-background-width;
+  background-color: $modal-icon-background-color;
+  border-radius: $modal-icon-background-radius;
+}
+
+.modal__icon {
+  @include position($modal-icon-position); 
+}
+
 .modal__close {
   @include position($modal-close-position, $modal-close-cords);
   @include transition($modal-close-transition);
@@ -125,7 +143,7 @@ $modal-close-icon-width:        15px;
   height: $modal-close-icon-width;
 
   #app-icon {
-    fill: $white-base;
+    fill: $grey-base;
   }
 }
 
