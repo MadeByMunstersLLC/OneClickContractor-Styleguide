@@ -3,8 +3,8 @@
 
 // Variables
 $checkbox-background:                   $white-base;
-$checkbox-border:                       2px solid $grey-base;
-$checkbox-border-radius:                1px;
+$checkbox-border:                       2px solid $grey-light;
+$checkbox-border-radius:                2px;
 $checkbox-cursor:                       pointer;
 $checkbox-dimensions:                   17px;
 $checkbox-display:                      inline-block;
@@ -61,6 +61,7 @@ input[type="checkbox"]:checked {
 
 .checkbox--label {
   @include position(relative);
+  padding-bottom: 20px;
 
   &.checkbox--label__small {
     @include position(relative);
@@ -71,3 +72,4 @@ input[type="checkbox"]:checked {
     @include position(absolute, 2px null null null);
   }
 }
+

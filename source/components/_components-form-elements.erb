@@ -11,6 +11,7 @@
     <input type="text" placeholder="Placeholder text here" disabled />
     <input type="search" placeholder="Placeholder text here" class="input--search" />
     <select>
+      <option selected="selected">These are the options</option>
       <option>Select Option One</option>
       <option>Select Option Two</option>
       <option>Select Option Three</option>
@@ -61,10 +62,6 @@
       <input type="checkbox" />
       <span>Checkbox item text</span>
     </div>
-    <div class="radio-button--label">
-      <input type="radio" />
-      <span>Radio Button text</span>
-    </div>
   </div>
   <div class="content-section__row">
     <h4 class="content-section__label">Sample Code</h4>
@@ -88,6 +85,38 @@
         <tr>
           <td class="table__body-item" style="width:30%">.checkbox--label</td>
           <td class="table__body-item">When creating a checkbox with an adjacent line of text, place this class on the parent element. Then, use a checkbox input and span for input text as direct children. <% code("html") do %><div class="checkbox--label"> <input type="checkbox" /> <span>Checkbox item text</span> </div> <% end %></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="content-section__row">
+    <div class="radio-button--label">
+      <input type="radio" />
+      <span>Radio Button text</span>
+    </div>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">Sample Code</h4>
+<% code("html") do %>
+  <!-- Input Radio Button -->
+  <div class="radio-button--label">
+    <input type="radio" />
+    <span>Radio button item text</span>
+  </div>
+<% end %><br/>
+  </div>
+  <div class="content-section__row">
+    <h4 class="content-section__label">HTML Guidelines</h4>
+    <p>This table gives you a quick overview of the CSS classes that can be applied to create a checkbox.</p>
+    <table class="table">
+      <thead class="table__header">
+        <th class="table__header-item">Class Name</th>
+        <th class="table__header-item">Usage</th>
+      </thead>
+      <tbody class="table__body">
+        <tr>
+          <td class="table__body-item" style="width:30%">.radio-button--label</td>
+          <td class="table__body-item">When creating a radio button with an adjacent line of text, place this class on the parent element. Then, use a radio input and span for input text as direct children. <% code("html") do %><div class="radio-button--label"> <input type="radio" /> <span>Radio button item text</span> </div> <% end %></td>
         </tr>
       </tbody>
     </table>

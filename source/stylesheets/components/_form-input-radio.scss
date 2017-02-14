@@ -1,0 +1,79 @@
+// Form Input Radio Component
+// ========================================
+
+// Variables
+$radio-background:                   $white-base;
+$radio-border:                       1px solid $grey-light;
+$radio-border-radius:                3em;
+$radio-cursor:                       pointer;
+$radio-dimensions:                   17px;
+$radio-display:                      inline-block;
+$radio-margin:                       0 5px 0 0;
+$radio-padding:                      0;
+$radio-position:                     relative;
+$radio-transition:                   all 0.2s ease-in;
+$radio-v-align:                      bottom;
+
+$radio-checked-background:           $blue-base;
+$radio-checked-border:               1px solid $grey-light;
+$radio-checked-margin:               auto;
+
+
+$radio-background-disabled:          $white-dark;
+$radio-background-disabled-checked:  $white-dark;
+$radio-border-disabled:              $grey-base;
+
+
+// Structure
+input[type="radio"],
+input[type="radio"]:focus {
+  @include appearance(none);
+  @include position($radio-position);
+  @include transition();
+  background-color: $radio-background;
+  border: $radio-border;
+  border-radius: $radio-border-radius;
+  display: $radio-display;
+  height: $radio-dimensions;
+  margin: $radio-margin;
+  outline: none;
+  padding: $radio-padding;
+  vertical-align: $radio-v-align;
+  width: $radio-dimensions;
+  -webkit-appearance: none;
+
+  &:hover{ cursor: $radio-cursor; }
+}
+
+input[type="radio"]:checked {
+  border: $radio-checked-border;
+  background-color: $radio-checked-background;
+  
+
+
+  &:after{
+    @include position(absolute);
+    @include transition($radio-transition);
+    height: 10px;
+    width: 10px;
+    top: 5px;
+    left: 5px;
+    text-align: center;
+    margin: $radio-checked-margin;
+    content: '';
+    
+  }
+}
+
+.radio--label {
+  @include position(relative);
+
+  &.radio--label__small {
+    @include position(relative);
+    @include s-foxtrot;
+  }
+
+  span {
+    @include position(absolute, 2px null null null);
+  }
+}

@@ -4,7 +4,7 @@
 
 // Variables
 $modal-margin:                  $spacer-delta;
-$modal-padding:                 $spacer-charlie;
+$modal-padding:                 $spacer-bravo $spacer-delta $spacer-delta $spacer-alpha;
 $modal-position:                absolute;
 
 $modal-container-position:      relative;
@@ -114,17 +114,6 @@ $modal-icon-background-width:   40px;
   }
 }
 
-.modal__icon-background {
-  width: $modal-icon-background-width;
-  height: $modal-icon-background-width;
-  background-color: $modal-icon-background-color;
-  border-radius: $modal-icon-background-radius;
-}
-
-.modal__icon {
-  @include position($modal-icon-position); 
-}
-
 .modal__close {
   @include position($modal-close-position, $modal-close-cords);
   @include transition($modal-close-transition);
@@ -149,7 +138,7 @@ $modal-icon-background-width:   40px;
 
 .modal__actions {
   float: right;
-  margin-top: $spacer-alpha;
+  margin-top: $spacer-charlie;
 }
 
 .modal__actions-item {
