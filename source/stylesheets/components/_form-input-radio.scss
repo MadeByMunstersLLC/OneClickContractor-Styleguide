@@ -13,10 +13,13 @@ $radio-padding:                      0;
 $radio-position:                     relative;
 $radio-transition:                   all 0.2s ease-in;
 $radio-v-align:                      bottom;
+$radio-box-shadow:                   inset 0 0 0 3px $white-base;
 
 $radio-checked-background:           $blue-base;
 $radio-checked-border:               1px solid $grey-light;
 $radio-checked-margin:               auto;
+$radio-checked-dimensions:           10px;
+$radio-checked-border-radius:        90%;
 
 
 $radio-background-disabled:          $white-dark;
@@ -33,6 +36,7 @@ input[type="radio"]:focus {
   background-color: $radio-background;
   border: $radio-border;
   border-radius: $radio-border-radius;
+  box-shadow: $radio-box-shadow;
   display: $radio-display;
   height: $radio-dimensions;
   margin: $radio-margin;
@@ -50,17 +54,15 @@ input[type="radio"]:checked {
   background-color: $radio-checked-background;
   
 
-
   &:after{
     @include position(absolute);
     @include transition($radio-transition);
-    height: 10px;
-    width: 10px;
-    top: 5px;
-    left: 5px;
+    height: $radio-checked-dimensions;
+    width: $radio-checked-dimensions;
     text-align: center;
     margin: $radio-checked-margin;
     content: '';
+    border-radius: $radio-checked-border-radius;
     
   }
 }

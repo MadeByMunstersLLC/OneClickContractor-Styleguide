@@ -13,7 +13,7 @@ $select-error-background:            $red-base;
 
 
 // Structure
-select{
+select {
   @include font-type($primary-sans-serif, normal, 400);
   background-image: image-url($select-background-url);
   background-position: $select-background-position;
