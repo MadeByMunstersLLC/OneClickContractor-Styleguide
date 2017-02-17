@@ -3,30 +3,33 @@
 
 
 // Variables
-$app-topbar-background:             $grey-base;
+$app-topbar-background:             $grey-light;
 $app-topbar-border:                 1px solid $black-light;
 $app-topbar-cords:                  0 null null null;
 $app-topbar-margin-0:               0;
 $app-topbar-max-width:              1600px;
-$app-topbar-padding:                $spacer-charlie;
+$app-topbar-padding:                $spacer-echo;
 $app-topbar-position:               fixed;
 $app-topbar-width:                  100%;
 $app-topbar-z-index:                11;
 
 $app-topbar-section-display:        inline-block;
 $app-topbar-section-v-align:        middle;
-$app-topbar-section-width:          28%;
+
+
+$app-topbar-left-width:             35px;
 
 $app-topbar-middle-margin:          0 auto;
-$app-topbar-middle-width:           40%;
+$app-topbar-middle-width:           65%;
 
 $app-topbar-right-float:            right;
 $app-topbar-right-align:            right;
+$app-topbar-right-width:            28%;
 
 $app-topbar-input-width:            100%;
 
-$app-topbar-avatar-bg:              $white-base;
-$app-topbar-avatar-color:           $grey-dark;
+$app-topbar-avatar-bg:              $blue-base;
+$app-topbar-avatar-color:           $white-base;
 $app-topbar-avatar-display:         inline-block;
 $app-topbar-avatar-margin:          $spacer-echo;
 $app-topbar-avatar-position:        relative;
@@ -37,7 +40,7 @@ $app-topbar-user-content-position:  relative;
 $app-topbar-user-content-cords:     -5px null null null;
 $app-topbar-user-content-display:   inline-block;
 
-$app-topbar-user-name-color:        $white-base;
+$app-topbar-user-name-color:        $black-base;
 
 $app-topbar-settings-text-align:    left;
 
@@ -67,9 +70,13 @@ $app-topbar-settings-item-margin:   $spacer-echo;
   vertical-align: $app-topbar-section-v-align;
 }
 
-.app-topbar__left,
+.app-topbar__left {
+  width: $app-topbar-left-width;
+}
+
+
 .app-topbar__right {
-  width: $app-topbar-section-width;
+  width: $app-topbar-right-width;
 }
 
 .app-topbar__middle {
@@ -132,6 +139,14 @@ $app-topbar-settings-item-margin:   $spacer-echo;
     .user__name {
       @include font-type($primary-sans-serif, normal, 600);
       color: $app-topbar-user-name-color;
+    }
+    
+    .user__title {
+      @include font-type($primary-sans-serif, normal, 500);
+      @include s-golf;
+      text-transform: uppercase;
+      display: block;
+      padding-top: 3px;
     }
   }
 

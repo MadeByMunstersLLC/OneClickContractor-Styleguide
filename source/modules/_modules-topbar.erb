@@ -6,6 +6,8 @@
       <p class="text">The application's topbar appears at the top of each view. It serves as the user's main navigaiton between views. It should be divided into three parts. The first part is the logo. This appears in the top left and should allow users to quickly jump back their dashboards. The middle section contains a search bar. This search bar should allow users to find a scenario or business to navigate to quickly. Lastly, the more links popout - hidden in this visual view - and the user settings gives the user a visual que of who is signed in at the moment and where to go for non-business essential pages.</p>
     </div>
   </div>
+  
+  <!-- here -->
   <div class="content-section__row">
     <header role="header" class="app-topbar">
       <div class="app-topbar__left">
@@ -61,6 +63,61 @@
       </div>
     </header>
   </div>
+  <!-- to here -->
+  
+  <!-- new -->
+  <div class="page-article__content-section" id="topbar">
+  <div class="content-section__row">
+    <div class="content-section__header">
+      <h2 class="title">New Topbar</h2>
+      <p class="text--large">You know that thing on the top of every page.</p>
+      <p class="text">The application's topbar appears at the top of each view. It serves as the user's main navigaiton between views. It should be divided into three parts. The first part is the logo. This appears in the top left and should allow users to quickly jump back their dashboards. The middle section contains a search bar. This search bar should allow users to find a scenario or business to navigate to quickly. Lastly, the more links popout - hidden in this visual view - and the user settings gives the user a visual que of who is signed in at the moment and where to go for non-business essential pages.</p>
+    </div>
+  </div>
+    
+  
+    
+    
+  <div class="content-section__row">
+    <header role="header" class="app-topbar">
+      <div class="app-topbar__left">
+        <a href="/">
+          <%= image_tag 'logos/logo.svg', alt: 'One-Click Contractor Logo' %>
+        </a>
+      </div>
+      <div class="app-topbar__middle">
+        <input type="search" name="siteSearch" placeholder="Quickly lookup a scenario and launch its dashboard" class="input--search input--no-border" />
+      </div>
+      <div class="app-topbar__right">
+        <ul class="right__list">
+          <li class="right__item">
+            <div class="app-topbar__user">
+              <div class="user__avatar">
+                <span class="user__avatar-img user__avatar-no-img">KC</span>
+              </div>
+              <div class="user__content">
+                <span class="user__name">Kurt Cunningham</span>
+                <span class="user__title">Contractor</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        
+        
+        
+      </div>
+    </header>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <div class="content-section__row">
     <h4 class="content-section__label">Sample Code</h4>
 <% code("html") do %>
