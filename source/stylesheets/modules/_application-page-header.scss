@@ -2,22 +2,23 @@
 // ========================================
 
 // Variables
-$page-header-background:          $black-base;
+$page-header-background:          $grey-light;
 $page-header-cords:               105px null null null;
 $page-header-max-width:           1600px;
-$page-header-padding:             $spacer-charlie;
+$page-header-padding:             $spacer-delta;
 $page-header-padding-0:           0;
 $page-header-position:            fixed;
 $page-header-width:               100%;
 $page-header-z-index:             10;
 
-$page-header-tabs-margin:         $spacer-charlie;
+$page-header-tabs-margin:         $spacer-delta;
 
-$page-header-right-cords:         30px 30px null null;
+$page-header-right-cords:         20px 20px null null;
 $page-header-right-position:      absolute;
 
-$page-header-title-color:         $white-base;
-$page-header-margin:              0;
+$page-header-title-color:         $black-base;
+$page-header-margin:              $spacer-delta;
+$page-header-title-display:       inline-block;
 
 $page-header-link-display:        inline-block;
 $page-header-link-margin:         $spacer-echo;
@@ -44,6 +45,7 @@ $page-header-stat-margin:         $spacer-delta;
 
   // Tab Adjustments
   &.page-header--tabs {
+    padding: $page-header-tabs-margin;
     padding-bottom: $page-header-padding-0;
   }
 
@@ -60,21 +62,18 @@ $page-header-stat-margin:         $spacer-delta;
 
 }
 
-// Page Header Right
-.page-header__right {
-  @include position($page-header-right-position, $page-header-right-cords);
-}
 
-
-// Page Header Title
-.page-header__title {
+// Page Header Left
+.page-header__left {
   color: $page-header-title-color;
-  margin: $page-header-margin;
+  margin-left: $page-header-margin;
+  display: $page-header-title-display;
+  vertical-align: middle;
 }
 
 
-// Page Header Back Link
-.page-header__back-link {
+// Page Header Menu Link
+.page-header__menu-link {
   @extend .link--alpha;
   @include s-golf;
   display: $page-header-link-display;
@@ -87,12 +86,17 @@ $page-header-stat-margin:         $spacer-delta;
   }
 
   svg {
-    width: 10px;
+    width: 25px;
   }
 
   #app-icon {
     fill: $blue-base;
   }
+}
+
+// Page Header Right
+.page-header__right {
+  @include position($page-header-right-position, $page-header-right-cords);
 }
 
 

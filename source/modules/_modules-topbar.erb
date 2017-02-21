@@ -5,9 +5,7 @@
       <p class="text--large">You know that thing on the top of every page.</p>
       <p class="text">The application's topbar appears at the top of each view. It serves as the user's main navigaiton between views. It should be divided into three parts. The first part is the logo. This appears in the top left and should allow users to quickly jump back their dashboards. The middle section contains a search bar. This search bar should allow users to find a scenario or business to navigate to quickly. Lastly, the more links popout - hidden in this visual view - and the user settings gives the user a visual que of who is signed in at the moment and where to go for non-business essential pages.</p>
     </div>
-  </div>
-  
-  <!-- here -->
+  </div>  
   <div class="content-section__row">
     <header role="header" class="app-topbar">
       <div class="app-topbar__left">
@@ -19,92 +17,23 @@
         <input type="search" name="siteSearch" placeholder="Quickly lookup a scenario and launch its dashboard" class="input--search input--no-border" />
       </div>
       <div class="app-topbar__right">
-        <ul class="right__list">
-          <!-- <li class="right__item">
-            <div class="popout__container">
-              <a href="#" class="popout__trigger">
-                <svg width="15" height="15" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 18h5v-5h-5v5zm-2 2h9v-9h-9v9zm-9-2h5v-5H2v5zm-2 2h9v-9H0v9zM13 7h5V2h-5v5zm-2 2h9V0h-9v9zM2 7h5V2H2v5zM0 9h9V0H0v9z" fill="#2791C6" fill-rule="evenodd"/></svg>
-              </a>
-              <div class="popout">
-                <ul class="popout__list">
-                  <li class="popout__item">
-                    <a href="#" class="popout__link">Popout Link</a>
-                  </li>
-                  <li class="popout__item">
-                    <a href="#" class="popout__link">Popout Link</a>
-                  </li>
-                  <li class="popout__item">
-                    <a href="#" class="popout__link">Popout Link</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li> -->
-          <li class="right__item">
-            <div class="app-topbar__user">
-              <div class="user__avatar">
-                <span class="user__avatar-img user__avatar-no-img">KC</span>
-              </div>
-              <div class="user__content">
-                <span class="user__name">Kurt Cunningham</span>
-                <ul class="user__settings-list">
-                  <li class="list__item">
-                    <a href="#" class="list__item-link">Settings</a>
-                  </li>
-                  <li class="list__item">|</li>
-                  <li class="list__item">
-                    <a href="#" class="list__item-link">Sign Out</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </header>
-  </div>
-  <!-- to here -->
-  
-  <!-- new -->
-  <div class="page-article__content-section" id="topbar">
-  <div class="content-section__row">
-    <div class="content-section__header">
-      <h2 class="title">New Topbar</h2>
-      <p class="text--large">You know that thing on the top of every page.</p>
-      <p class="text">The application's topbar appears at the top of each view. It serves as the user's main navigaiton between views. It should be divided into three parts. The first part is the logo. This appears in the top left and should allow users to quickly jump back their dashboards. The middle section contains a search bar. This search bar should allow users to find a scenario or business to navigate to quickly. Lastly, the more links popout - hidden in this visual view - and the user settings gives the user a visual que of who is signed in at the moment and where to go for non-business essential pages.</p>
-    </div>
-  </div>
-    
-  
-    
-    
-  <div class="content-section__row">
-    <header role="header" class="app-topbar">
-      <div class="app-topbar__left">
-        <a href="/">
-          <%= image_tag 'logos/logo.svg', alt: 'One-Click Contractor Logo' %>
+        <div class="top-bar__notification">
+          <a href="">
+            <%= inline_svg("icons/notification-icon.svg") %>
+          </a>
+        </div>
+        <div class="app-topbar__user">
+          <div class="user__avatar">
+            <span class="user__avatar-img user__avatar-no-img">KC</span>
+          </div>
+          <div class="user__content">
+            <span class="user__name">Kurt Cunningham</span>
+            <span class="user__title">Contractor</span>
+          </div>
+        </div>
+        <a href="/scenario/index.html" class="top-bar__select-link">
+          <%= inline_svg("icons/select-icon.svg") %>
         </a>
-      </div>
-      <div class="app-topbar__middle">
-        <input type="search" name="siteSearch" placeholder="Quickly lookup a scenario and launch its dashboard" class="input--search input--no-border" />
-      </div>
-      <div class="app-topbar__right">
-        <ul class="right__list">
-          <li class="right__item">
-            <div class="app-topbar__user">
-              <div class="user__avatar">
-                <span class="user__avatar-img user__avatar-no-img">KC</span>
-              </div>
-              <div class="user__content">
-                <span class="user__name">Kurt Cunningham</span>
-                <span class="user__title">Contractor</span>
-              </div>
-            </div>
-          </li>
-        </ul>
-        
-        
-        
       </div>
     </header>
   </div>

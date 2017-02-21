@@ -3,12 +3,12 @@
 
 
 // Variables
-$app-topbar-background:             $grey-light;
+$app-topbar-background:             $white-base;
 $app-topbar-border:                 1px solid $black-light;
 $app-topbar-cords:                  0 null null null;
 $app-topbar-margin-0:               0;
 $app-topbar-max-width:              1600px;
-$app-topbar-padding:                $spacer-echo;
+$app-topbar-padding:                $spacer-delta;
 $app-topbar-position:               fixed;
 $app-topbar-width:                  100%;
 $app-topbar-z-index:                11;
@@ -17,16 +17,19 @@ $app-topbar-section-display:        inline-block;
 $app-topbar-section-v-align:        middle;
 
 
-$app-topbar-left-width:             35px;
+$app-topbar-left-width:             8%;
 
 $app-topbar-middle-margin:          0 auto;
-$app-topbar-middle-width:           65%;
+$app-topbar-middle-width:           51%;
 
 $app-topbar-right-float:            right;
 $app-topbar-right-align:            right;
-$app-topbar-right-width:            28%;
+$app-topbar-right-width:            40%;
 
 $app-topbar-input-width:            100%;
+
+$app-topbar-notification-display:   inline-block;
+$app-topbar-notification-margin:    $spacer-delta;
 
 $app-topbar-avatar-bg:              $blue-base;
 $app-topbar-avatar-color:           $white-base;
@@ -40,13 +43,11 @@ $app-topbar-user-content-position:  relative;
 $app-topbar-user-content-cords:     -5px null null null;
 $app-topbar-user-content-display:   inline-block;
 
+
 $app-topbar-user-name-color:        $black-base;
 
-$app-topbar-settings-text-align:    left;
-
-$app-topbar-settings-item-color:    $white-base;
-$app-topbar-settings-item-display:  inline;
-$app-topbar-settings-item-margin:   $spacer-echo;
+$app-topbar-select-item-display:    inline-block;
+$app-topbar-select-item-margin:     $spacer-delta;
 
 
 
@@ -104,6 +105,12 @@ $app-topbar-settings-item-margin:   $spacer-echo;
   }
 }
 
+.top-bar__notification {
+  display: $app-topbar-section-display;
+  vertical-align: top;
+  margin: $app-topbar-notification-margin;
+}
+
 .app-topbar__user {
   display: $app-topbar-section-display;
 
@@ -149,19 +156,11 @@ $app-topbar-settings-item-margin:   $spacer-echo;
       padding-top: 3px;
     }
   }
+}
 
-  .user__settings-list {
-    text-align: $app-topbar-settings-text-align;
-
-    .list__item {
-      @include s-golf;
-      color: $app-topbar-settings-item-color;
-      display: $app-topbar-settings-item-display;
-      margin-right: $app-topbar-settings-item-margin;
-    }
-
-    .list__item-link {
-      color: $app-topbar-settings-item-color;
-    }
-  }
+.top-bar__select-link {
+  display: $app-topbar-select-item-display;
+  vertical-align: top;
+  margin: $app-topbar-select-item-margin;
+  
 }

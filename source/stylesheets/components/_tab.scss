@@ -15,7 +15,6 @@ $tab-list-item-margin:               $spacer-charlie;
 $tab-list-item-opacity:              0.5;
 $tab-list-item-padding:              0 0 $spacer-echo;
 $tab-list-item-position:             relative;
-$tab-list-item-transform:            uppercase;
 
 $tab-list-item-opacity-active:       1;
 
@@ -31,7 +30,7 @@ $tab-list-link-width-active:         100%;
 $tab-content-margin:                 $spacer-charlie;
 $tab-content-animation-in:           fade-show 1.75s ease;
 
-$tab-list-link-color-dark:           $white-base;
+$tab-list-link-color-dark:           $black-base;
 
 
 // Structure
@@ -46,7 +45,7 @@ $tab-list-link-color-dark:           $white-base;
 
   // Tab Item
   .tab__item {
-    @include font-type($primary-sans-serif, normal, 600);
+    @include font-type($primary-sans-serif, normal, 400);
     @include position($tab-list-item-position);
     @include s-foxtrot;
     color: $tab-list-item-color;
@@ -55,7 +54,6 @@ $tab-list-link-color-dark:           $white-base;
     opacity: $tab-list-item-opacity;
     padding: $tab-list-item-padding;
     text-align: $tab-list-item-align;
-    text-transform: $tab-list-item-transform;
 
     &::before {
       @include position($tab-list-link-position, $tab-list-link-cords);

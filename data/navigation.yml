@@ -32,9 +32,6 @@ site_navigation:
       - section_title: Form Elements
         section_link: 'components/#form-elements'
         section_page_link: '#form-elements'
-      - section_title: Highlights
-        section_link: 'components/#highlights'
-        section_page_link: '#highlights'
       - section_title: Links
         section_link: 'components/#links'
         section_page_link: '#links'
