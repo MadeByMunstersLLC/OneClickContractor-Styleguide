@@ -14,3 +14,11 @@ gem "tzinfo-data", platforms: [:mswin, :mingw, :jruby]
 gem 'bourbon'
 gem 'neat'
 gem 'nokogiri'
+
+# Rails Assets Gems
+source 'https://rails-assets.org' do
+  
+  # jQuery UI
+  gem 'rails-assets-jquery-ui'
+  
+end
