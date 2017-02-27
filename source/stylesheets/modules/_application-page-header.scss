@@ -2,7 +2,7 @@
 // ========================================
 
 // Variables
-$page-header-background:          $grey-light;
+$page-header-background:          $white-base;
 $page-header-cords:               105px null null null;
 $page-header-max-width:           1600px;
 $page-header-padding:             $spacer-delta;
@@ -10,6 +10,7 @@ $page-header-padding-0:           0;
 $page-header-position:            fixed;
 $page-header-width:               100%;
 $page-header-z-index:             10;
+$page-header-box-shadow:          0px 0px 10px $grey-base;
 
 $page-header-tabs-margin:         $spacer-delta;
 
@@ -42,6 +43,7 @@ $page-header-stat-margin:         $spacer-delta;
   padding: $page-header-padding;
   width: $page-header-width;
   z-index: $page-header-z-index;
+  box-shadow: $page-header-box-shadow;
 
   // Tab Adjustments
   &.page-header--tabs {

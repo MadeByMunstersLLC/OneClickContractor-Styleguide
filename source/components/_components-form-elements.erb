@@ -32,6 +32,7 @@
 
   <!-- Input Select -->
   <select>
+    <option selected="selected">These are the options</option>
     <option>Select Option One</option>
     <option>Select Option Two</option>
     <option>Select Option Three</option>
@@ -127,6 +128,7 @@
     <label class="form__label input--error">Form Label</label>
     <input type="text" placeholder="Placeholder text here" class="input--error" />
     <select class="input--error">
+      <option selected="selected">These are the options</option>
       <option>Select Option One</option>
       <option>Select Option Two</option>
       <option>Select Option Three</option>
@@ -141,6 +143,7 @@
     <input type="text" placeholder="Placeholder text here" class="input--error" />
   <!-- Input Select With Error -->
   <select class="input--error">
+    <option selected="selected">These are the options</option>
     <option>Select Option One</option>
     <option>Select Option Two</option>
     <option>Select Option Three</option>
@@ -172,33 +175,15 @@
       </tbody>
     </table>
   </div>
-  
-  
-  
-  
-  
-  <!--new success -->
   <div class="content-section__row">
     <input type="text" placeholder="Placeholder text here" class="input--success" />
-    <select class="input--success">
-      <option>Select Option One</option>
-      <option>Select Option Two</option>
-      <option>Select Option Three</option>
-    </select>
- 
   </div>
   <div class="content-section__row">
     <h4 class="content-section__label">Sample Code</h4>
 <% code("html") do %>
   <!-- Form Label / Input With Error -->
-  <label class="form__label input--error">Form Label</label>
-    <input type="text" placeholder="Placeholder text here" class="input--error" />
-  <!-- Input Select With Error -->
-  <select class="input--error">
-    <option>Select Option One</option>
-    <option>Select Option Two</option>
-    <option>Select Option Three</option>
-  </select>
+  <label class="form__label input--success">Form Label</label>
+    <input type="text" placeholder="Placeholder text here" class="input--success" />
 <% end %><br/>
   </div>
   <div class="content-section__row">
@@ -211,17 +196,12 @@
       </thead>
       <tbody class="table__body">
         <tr>
-          <td class="table__body-item" style="width:30%">.form__label.input--error</td>
+          <td class="table__body-item" style="width:30%">.form__label.input--success</td>
           <td class="table__body-item">Place this class on the label that corresponds with the input that contains the error. <% code("html") do %> <label class="form__label input--error">Form Label</label> <% end %></td>
         </tr>
         <tr>
-          <td class="table__body-item" style="width:30%">input.input--error</td>
+          <td class="table__body-item" style="width:30%">input.input-success</td>
           <td class="table__body-item">Place this class on the input that contains the error. <% code("html") do %> <input type="text" placeholder="Placeholder text here" class="input--error" /> <% end %></td>
-        </tr>
-        <tr>
-          <td class="table__body-item" style="width:30%">select.input--error</td>
-          <td class="table__body-item">Place this class on the input that contains the error. <% code("html") do %> <select class="input--error">Options go here</select> <% end %>
-          </td>
         </tr>
       </tbody>
     </table>

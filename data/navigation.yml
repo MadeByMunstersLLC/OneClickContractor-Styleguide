@@ -8,9 +8,6 @@ site_navigation:
       - section_title: Typography
         section_link: 'elements/#typography'
         section_page_link: '#typography'
-      - section_title: Iconography
-        section_link: 'elements/#icons'
-        section_page_link: '#icons'
   - section_title: Design Components
     section_url: components
     sections:
@@ -41,9 +38,6 @@ site_navigation:
       - section_title: Modals
         section_link: 'components/#modals'
         section_page_link: '#modals'
-      - section_title: Popouts
-        section_link: 'components/#popout'
-        section_page_link: '#popout'
       - section_title: Tables
         section_link: 'components/#tables'
         section_page_link: '#tables'
@@ -62,9 +56,6 @@ site_navigation:
       - section_title: Page Header
         section_link: 'modules/#page-header-main'
         section_page_link: '#page-header-main'
-      - section_title: Page Header Tabs
-        section_link: 'modules/#page-header-tabs'
-        section_page_link: '#page-header-tabs'
   - section_title: Design Layout
     section_url: layout
     sections:

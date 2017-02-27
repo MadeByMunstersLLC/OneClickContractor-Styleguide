@@ -54,35 +54,6 @@
       </tr>
     </tbody>
   </table>
-
-  <!-- Card Based Table -->
-  <table class="card-table">
-
-    <!-- Card Table Header -->
-    <thead class="card-table__header">
-      <tr>
-        <th class="card-item card-item--large">Scenario Title</th>
-      </tr>
-    </thead>
-
-
-    <!-- Card Table Body -->
-    <tbody class="card-table__body">
-      <tr class="card card--small">
-
-        <!-- Card Table Item Large -->
-        <td class="card-item card-item--large">
-          <h4 class="title"></h4>
-        </td>
-
-        <!-- Card Table Item Base -->
-        <td class="card-item">DirecTV</td>
-      </tr>
-
-      <!-- Hack to provide space -->
-      <tr class="spacer"></tr>
-    </tbody>
-  </table>
 <% end %><br/>
   </div>
   <div class="content-section__row">
@@ -121,44 +92,35 @@
     <table class="card-table">
       <thead class="card-table__header">
         <tr>
-          <th class="card-item card-item--large">Scenario Title</th>
-          <th class="card-item">Business</th>
-          <th class="card-item">Status</th>
-          <th class="card-item">Modules</th>
-          <th class="card-item">Rules</th>
-          <th class="card-item">Variations</th>
-          <th class="card-item">Tests</th>
+          <th class="card-item card-item--large">Note</th>
+          <th class="card-item">Added By</th>
+          <th class="card-item">Added On</th>
+          <th class="card-item">Actions</th>
         </tr>
       </thead>
       <tbody class="card-table__body">
         <tr class="card card--small">
           <td class="card-item card-item--large">
-            <h4 class="title">Myspace Layouts The Missing Element</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet mi magna, vel pretium augue iaculis vel.
           </td>
-          <td class="card-item">DirecTV</td>
+          <td class="card-item">Steven Patrick</td>
+          <td class="card-item">01-08-17</td>
           <td class="card-item">
-            <i class="indicator--alpha "></i>
-            active
+            <a href="#"><%= inline_svg("icons/edit-icon.svg", class:"card__icon-action") %></a>
+            <a href="#"><%= inline_svg("icons/trash-icon.svg", class:"card__icon-action") %></a>
           </td>
-          <td class="card-item">122</td>
-          <td class="card-item">34</td>
-          <td class="card-item">3</td>
-          <td class="card-item">1</td>
         </tr>
         <tr class="spacer"></tr>
         <tr class="card card--small">
           <td class="card-item card-item--large">
-            <h4 class="title">Myspace Layouts The Missing Element</h4>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet mi magna, vel pretium augue iaculis vel.
           </td>
-          <td class="card-item">DirecTV</td>
+          <td class="card-item">Steven Patrick</td>
+          <td class="card-item">01-09-17</td>
           <td class="card-item">
-            <i class="indicator--alpha "></i>
-            active
+            <a href="#"><%= inline_svg("icons/edit-icon.svg", class:"card__icon-action") %></a>
+            <a href="#"><%= inline_svg("icons/trash-icon.svg", class:"card__icon-action") %></a>
           </td>
-          <td class="card-item">122</td>
-          <td class="card-item">34</td>
-          <td class="card-item">3</td>
-          <td class="card-item">1</td>
         </tr>
       </tbody>
     </table>
@@ -166,22 +128,37 @@
   <div class="content-section__row">
     <h4 class="content-section__label">Sample Code</h4>
 <% code("html") do %>
+    <!-- Card Table-->
+    <table class="card-table">
+      <!-- Card Table Headings -->
+      <thead class="card-table__header">
+        <tr>
+          <!-- Card Table Heading Large -->
+          <th class="card-item card-item--large">Note</th>
+          <!-- Card Table Base Heading -->
+          <th class="card-item">Added By</th>
+          <th class="card-item">Added On</th>
+          <th class="card-item">Actions</th>
+        </tr>
+      </thead>
     <!-- Card Table Body -->
     <tbody class="card-table__body">
-      <tr class="card card--small">
-
-        <!-- Card Table Item Large -->
-        <td class="card-item card-item--large">
-          <h4 class="title"></h4>
-        </td>
-
-        <!-- Card Table Item Base -->
-        <td class="card-item">DirecTV</td>
-      </tr>
-
-      <!-- Hack to provide space -->
-      <tr class="spacer"></tr>
-    </tbody>
+        <tr class="card card--small">
+          <!-- Card Table Item Large -->
+          <td class="card-item card-item--large">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum laoreet mi magna, vel pretium augue iaculis vel.
+          </td>
+          <!-- Card Table Item Base -->
+          <td class="card-item">Steven Patrick</td>
+          <td class="card-item">01-08-17</td>
+          <td class="card-item">
+            <a href="#"><%= inline_svg("icons/edit-icon.svg", class:"card__icon-action") %></a>
+            <a href="#"><%= inline_svg("icons/trash-icon.svg", class:"card__icon-action") %></a>
+          </td>
+        </tr>
+        <!-- Hack to provide space -->
+        <tr class="spacer"></tr>
+      </tbody>
   </table>
 <% end %><br/>
   </div>

@@ -4,7 +4,7 @@
 
 // Variables
 $app-topbar-background:             $white-base;
-$app-topbar-border:                 1px solid $black-light;
+$app-topbar-border:                 1px solid $grey-base;
 $app-topbar-cords:                  0 null null null;
 $app-topbar-margin-0:               0;
 $app-topbar-max-width:              1600px;
@@ -12,6 +12,7 @@ $app-topbar-padding:                $spacer-delta;
 $app-topbar-position:               fixed;
 $app-topbar-width:                  100%;
 $app-topbar-z-index:                11;
+
 
 $app-topbar-section-display:        inline-block;
 $app-topbar-section-v-align:        middle;

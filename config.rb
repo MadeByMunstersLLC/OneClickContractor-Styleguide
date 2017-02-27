@@ -33,7 +33,7 @@ configure :build do
   target_env = ENV['TARGET'] || ''
   case target_env.to_s.downcase
   when 'prod'
-    config[:root_url] = '/Atomizer-Styleguide/'
+    config[:root_url] = '/OCC-Styleguide/'
   else
     config[:root_url] = '/'
   end

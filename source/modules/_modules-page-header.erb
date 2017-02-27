@@ -25,27 +25,32 @@
         <a href="/scenario/index.html" class="top-bar__select-link">
           <%= inline_svg("icons/select-icon.svg") %>
         </a>
-      </div>
-        
-        
-        
-        
-      
+      </div>  
     </header>
   </div>
   <div class="content-section__row">
     <h4 class="content-section__label">Sample Code</h4>
 <% code("html") do %>
   <header role="header" class="page-header">
-    <a href="/scenario/index.html" class="page-header__back-link">
-      <%= inline_svg("icons/arrow-left-icon.svg") %>
-      <span>Back To Modules</span>
-    </a>
-    <h2 class="page-header__title">2. Red Switch Transfer</h2>
-    <div class="page-header__right">
-      <button class="button--disabled">Save Updates</button>
-    </div>
-  </header>
+      <a href="/scenario/index.html" class="page-header__menu-link">
+        <%= inline_svg("icons/menu-icon.svg") %>
+      </a>
+      <div class="page-header__left">
+        <%= image_tag 'logos/kb-home-remodelers.png', alt: 'K&B Home Remodelers Logo' %>
+      </div>
+      
+      <div class="page-header__right">
+        <div class="app-topbar__user">
+          <div class="user__avatar">
+            <span class="user__avatar-img user__avatar-no-img">KC</span>
+          </div>
+          
+        </div>
+        <a href="/scenario/index.html" class="top-bar__select-link">
+          <%= inline_svg("icons/select-icon.svg") %>
+        </a>
+      </div>  
+    </header>
 <% end %><br/>
   </div>
 </div>

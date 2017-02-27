@@ -9,20 +9,22 @@ $card-table-icon-fill:          $grey-dark;
 
 $card-item-display:             inline-block;
 $card-item-v-align:             middle;
+$card-item-border:              1px solid $grey-light;
 
-$card-item-width-lg:            35%;
+$card-item-width-lg:            64%;
 
-$card-header-item-color:        $purple-base;
-$card-header-item-padding:      $spacer-charlie;
+$card-header-item-color:        $grey-base;
+$card-header-item-padding:      $spacer-delta;
 $card-header-item-transform:    uppercase;
 
 $card-body-item-align:          left;
 $card-body-item-padding:        $spacer-delta;
 $card-body-item-transform:      capitalize;
 
+
 $card-body-item-spacer:         $spacer-echo;
 
-$card-favorite-margin:          0 $spacer-echo 0 0;
+$card-favorite-margin:          0 $spacer-delta 0 0;
 
 $card-actions-width-md:         8%;
 $card-actions-width-lg:         6%;
@@ -35,7 +37,7 @@ $card-action-link-white-space:  nowrap;
 
 $card-action-link-last-margin:  $spacer-echo;
 
-$card-action-icon-width:        $spacer-delta;
+$card-action-icon-width:        $spacer-echo;
 
 
 // Structure
@@ -62,6 +64,10 @@ $card-action-icon-width:        $spacer-delta;
     color: $card-header-item-color;
     padding-bottom: $card-header-item-padding;
     text-transform: $card-header-item-transform;
+    
+    &.card-item--large {
+      padding-left: $card-body-item-padding;
+    }
   }
 }
 
@@ -75,6 +81,10 @@ $card-action-icon-width:        $spacer-delta;
 
   .card-item:not(:last-child) {
     padding-right: $card-body-item-padding;
+  }
+  
+  .card-item:last-child {
+    border-right: $card-item-border;
   }
 
   .card {
@@ -102,11 +112,11 @@ $card-action-icon-width:        $spacer-delta;
       margin-bottom: 0;
     }
 
-    .card__favorite-action svg {
-      margin: $card-favorite-margin;
-      width: $card-action-width;
-    }
   }
+  
+  .card__icon-action {
+      margin: $card-favorite-margin;
+    }
 }
 
 

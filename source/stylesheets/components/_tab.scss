@@ -5,7 +5,6 @@
 // Variables
 $tab-margin-top:                     $spacer-charlie;
 
-$tab-list-border:                    1px solid $grey-light;
 $tab-list-padding:                   0;
 
 $tab-list-item-align:                left;
@@ -40,7 +39,6 @@ $tab-list-link-color-dark:           $black-base;
 
 // Tab Nav List
 .tab__list {
-  border-bottom: $tab-list-border;
   padding: $tab-list-padding;
 
   // Tab Item
