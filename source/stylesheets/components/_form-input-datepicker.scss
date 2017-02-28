@@ -1,19 +1,77 @@
 // Form Input Component <!-- Based off of jquery UI Datepicker
 // ========================================
 
+// Variables
+$calendar-button:           $grey-light;
+$calendar-button-text:      $grey-dark;
+
+$calendar-date-color:       $black-base;
+$calendar-date-hover-background:   $blue-base;    
+
+//Input Box
+.input--date {
+  background-image: image-url('icons/date-icon.svg');
+  background-position: 10px;
+  background-repeat: no-repeat;
+  background-size: $spacer-delta;
+  padding-left: $spacer-charlie !important;
+}
+
 // Date
 .ui-datepicker {
   @extend .card;
   @extend .card--small;
+  @include font-type($primary-sans-serif, normal, 400);
   min-width: 320px;
 }
+
+// Title
+.ui-datepicker-title {
+  text-align: center;
+  padding-bottom: $spacer-delta;
+}
+
+.ui-corner-all {
+  @include font-type($primary-sans-serif, normal, 700);
+  text-align: center;
+  display: inline-block;
+}
+
+.ui-datepicker-prev {
+  margin-right: ($spacer-alpha * 3);
+//  float: left;
+  background-color: $calendar-button;
+  padding: $spacer-delta;
+  color: $calendar-button-text;
+}
+
+.ui-datepicker-next {
+//  float: right;
+  background-color: $calendar-button;
+  padding: $spacer-delta;
+  color: $calendar-button-text;
+  
+}
+
 
 // Datepicker Table
 .ui-datepicker-calendar {
   width: 100%;
+  color: $calendar-date-color;
+  
+  tr {
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  a {
+    cursor: pointer;
+    color: $calendar-date-color;
+    text-decoration: none;
+  }
+
 }
 
 .ui-state-default {
-  text-align: right;
-  margin: 10px;
+
 }
