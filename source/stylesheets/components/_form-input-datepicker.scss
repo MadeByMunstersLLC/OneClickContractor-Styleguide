@@ -1,0 +1,19 @@
+// Form Input Component <!-- Based off of jquery UI Datepicker
+// ========================================
+
+// Date
+.ui-datepicker {
+  @extend .card;
+  @extend .card--small;
+  min-width: 320px;
+}
+
+// Datepicker Table
+.ui-datepicker-calendar {
+  width: 100%;
+}
+
+.ui-state-default {
+  text-align: right;
+  margin: 10px;
+}
