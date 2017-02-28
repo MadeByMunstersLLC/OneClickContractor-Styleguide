@@ -1,0 +1,1 @@
+var $toggleHeader=$(".toggle__header"),$toggleTrigger=$(".toggle__trigger"),$toggleBody=$(".toggle__body"),activeClass="is-active";$toggleTrigger.on("click",function(g){g.preventDefault(),$(this).parent().siblings().toggleClass(activeClass),$(this).toggleClass(activeClass)});

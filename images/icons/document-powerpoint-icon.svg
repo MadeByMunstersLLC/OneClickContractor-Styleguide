@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="20px" viewBox="0 0 16 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Customer---Documents" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ProposalDocumentsMain_Desktop_1A_OCC" transform="translate(-364.000000, -443.000000)" fill="#FE7328">
+            <g id="Body" transform="translate(343.000000, 100.000000)">
+                <g id="section">
+                    <g id="table" transform="translate(1.000000, 80.000000)">
+                        <g id="tbody" transform="translate(0.000000, 33.000000)">
+                            <g id="tr" transform="translate(0.000000, 210.000000)">
+                                <g id="file-powerpoint" transform="translate(20.000000, 20.000000)">
+                                    <path d="M2,0 L10,0 L16,6 L16,18 C16,19.1045695 15.1045695,20 14,20 L2,20 C0.8954305,20 0,19.1045695 0,18 L0,2 C0,0.8954305 0.8954305,0 2,0 L2,0 Z M9,1.5 L9,7 L14.5,7 L9,1.5 L9,1.5 Z M4,9 L4,11 L5,11 L5,17 L4,17 L4,18 L8,18 L8,17 L7,17 L7,15 L9,15 C10.6568542,15 12,13.6568542 12,12 C12,10.3431458 10.6568542,9 9,9 L4,9 L4,9 Z M9,11 C9.55228475,11 10,11.4477153 10,12 C10,12.5522847 9.55228475,13 9,13 L7,13 L7,11 L9,11 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

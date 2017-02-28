@@ -1,0 +1,1 @@
+var $toggleElement=$(".toggle-element"),$toggleParent=$(".toggle-parent"),activeClass="is-active";$toggleElement.on("click",function(e){e.preventDefault(),$(this).toggleClass(activeClass)}),$toggleElement.on("click",function(e){e.preventDefault(),$(this).parents().closest($toggleParent).toggleClass(activeClass)});
